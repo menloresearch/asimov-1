@@ -1,19 +1,20 @@
 # Simulation Model
 
-MuJoCo model for Asimov v1. 25 actuated joints, 28 link meshes, friction-tuned foot contacts. Built for locomotion policy training and hardware-in-the-loop testing.
+MuJoCo model for Asimov v1. Floating base with 23 hinge joints, 25 STL link meshes, friction-tuned foot contacts. Built for locomotion policy training and hardware-in-the-loop testing. No actuators are defined in the XML — the training sim configures them in Python.
 
 ## Contents
 
 ```
 sim-model/
-├── xmls/asimov.xml     Full robot model
-└── assets/meshes/      28 STL link meshes
+├── xmls/asimov_1.xml     Full robot model (MJCF)
+├── urdf/asimov_1.urdf    URDF description (shares the same meshes)
+└── assets/meshes/        25 STL link meshes
 ```
 
 ## Usage
 
 ```bash
-python3 -m mujoco.viewer --mjcf=sim-model/xmls/asimov.xml
+python3 -m mujoco.viewer --mjcf=sim-model/xmls/asimov_1.xml
 ```
 
 Requires [MuJoCo](https://mujoco.org/) 3.x.
