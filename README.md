@@ -35,11 +35,12 @@ Asimov 1 is a 1.2 m, 35 kg biped with 25 actuated degrees of freedom. This repos
 | Onboard Compute | Raspberry Pi 5 (media + network) + Radxa CM5 (motion control) |
 | Structural Materials | 7075 aluminium, MJF PA12 nylon |
 
-| Activity | Load |
-|---|---|
-| Squat | 5 kg |
-| Bicep curl | 15 kg each arm |
-| Lateral raise | 18 kg each arm |
+| Activity | Rated Load | Peak Load |
+|---|---|---|
+| Squat | 5 kg | - |
+| Bicep curl | 5 kg each arm | 15 kg each arm |
+| Front raise | 5 kg each arm | 15 kg each arm |
+| Lateral raise | 6 kg each arm | 18 kg each arm |
 
 ---
 
