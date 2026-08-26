@@ -1,4 +1,4 @@
-# Asimov v1: Open-Source Humanoid Robot
+# Asimov 1: Open-Source Humanoid Robot
 
 [![License: CERN-OHL-S-2.0](https://img.shields.io/badge/Hardware-CERN--OHL--S--2.0-blue)](HARDWARE-LICENSE.txt)
 [![License: Software](https://img.shields.io/badge/Software-GPL--2.0-blue)](SOFTWARE-LICENSE.txt)
@@ -16,7 +16,7 @@ Asimov is an open-source humanoid robot that you can build, train and customize.
   <a href="https://forum.menlo.ai">Forum</a>
 </p>
 
-Asimov v1 is a 1.2 m, 35 kg biped with 25 actuated degrees of freedom. This repository contains the mechanical CAD, electrical CAD, simulation model, and onboard software to build, simulate, and customize Asimov v1.
+Asimov 1 is a 1.2 m, 35 kg biped with 25 actuated degrees of freedom. This repository contains the mechanical CAD, electrical CAD, simulation model, and onboard software to build, simulate, and customize Asimov 1.
 
 ---
 
@@ -26,11 +26,11 @@ Asimov v1 is a 1.2 m, 35 kg biped with 25 actuated degrees of freedom. This repo
 |---|---|
 | Height | 1.2 m |
 | Weight | 35 kg |
-| Degrees of Freedom | 25 actuated + 2 passive |
-| Legs | 6 DOF x 2 + toe x 2 |
+| Degrees of Freedom | 25 actuated |
+| Legs | 6 DOF x 2 |
 | Arms | 5 DOF x 2 (shoulder pitch/roll/yaw, elbow, wrist yaw) |
 | Torso | 1 DOF waist yaw, 10 W 4 ohm speaker, 6 DOF IMU |
-| Head | 2 DOF neck (neck yaw, neck pitch), Quad microphone array, 2MP monocular camera |
+| Head | 2 DOF neck (neck yaw, neck pitch), stereo microphone array, 2MP monocular camera |
 | CAN Bus | 5 @ 1Mbps + 1 @ 500kbps |
 | Onboard Compute | Raspberry Pi 5 (media + network) + Radxa CM5 (motion control) |
 | Structural Materials | 7075 aluminium, MJF PA12 nylon |
@@ -46,10 +46,10 @@ Asimov v1 is a 1.2 m, 35 kg biped with 25 actuated degrees of freedom. This repo
 ## Build your own Asimov
 
 > [!TIP]
-> **Option 1: DIY Kit:** Everything you need to build Asimov v1, unassembled. $499 deposit to reserve. $15,000 target price. Ships summer 2026. [Pre-order →](https://asimov.inc/diy-kit)
+> **Option 1: DIY Kit:** Everything you need to build Asimov 1, unassembled. Shipping now for $20,000. [Order now →](https://menlo.ai/asimov-1#buy)
 
 > [!NOTE]
-> **Option 2: Self-source:** Pull the [BOM](https://manual.asimov.inc/v1/bom) and fabricate everything yourself. [Assembly Manual →](https://manual.asimov.inc)
+> **Option 2: Self-source:** Pull the [BOM](https://docs.menlo.ai/asimov/1/assembly-preparations/self-source/select-release-and-bom) and fabricate everything yourself. [Assembly Manual →](https://docs.menlo.ai/asimov/1)
 
 ### DIY Kit
 
@@ -58,10 +58,9 @@ Asimov v1 is a 1.2 m, 35 kg biped with 25 actuated degrees of freedom. This repo
 | Hardware | All BOM components (unassembled), power supply & cabling, spare parts | Tools, hands |
 | Compute | RPi edge board, motion control board, network board, power distribution board | 4G/5G modules |
 | Sensors | Monocular camera, IMUs, mic, speaker, motor joint states | Lidar, 360 cam |
-| Safety | Wireless E-Stop, safety guidelines | Battery |
 | Docs | Quick start guide, manual, DIY build videos | — |
 
-**[Pre-order the Asimov v1 DIY Kit →](https://asimov.inc/diy-kit)**
+**[Pre-order the Asimov 1 DIY Kit →](https://asimov.inc/diy-kit)**
 
 ### Self-source
 
@@ -89,9 +88,8 @@ python3 scripts/generate_fabrication_manifest.py --check
 | ✅ | MuJoCo simulation model |
 | ✅ | Electrical wiring harness |
 | ✅ | Electrical schematics & PCB files |
-| 🔜 | Asimov API |
+| 🔜 | Asimov Edge |
 | 🔜 | Locomotion policy |
-| 🔜 | Mobile app |
 
 ---
 

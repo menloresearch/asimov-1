@@ -1,50 +1,55 @@
-## Motion Control Board
+## Robot Processing Unit 
+### Motion Control Board
+- The Motion Control Board (MCB) is a carrier board designed for the Radxa CM5. It has an onboard IMU and contains the necessary motor communication buses for the robot to function.
+- The Power Distribution Board (PDB) sits on top of the Motion Control Board (MCB) to form the 2 board stackup.
 
-The Motion Control Board (MCB) is a carrier board designed for the Radxa CM5, providing comprehensive connectivity for robotic applications.
-
-- The board serves as a carrier board for the Radxa CM5.
-- Power is supplied via a 5V input through an XT30 connector.
-- A UART TTL debug port is available for serial debugging purposes.
-- The LSM6DSV IMU is located at the bottom of the board, with an I2C connector available if an external IMU is required.
-- All signal connections use JST-GH connectors
+General information:
+- Power is supplied via the XT90(2+2) connector on the PDB, with 5V being routed to the MCB at the bottom
+- The UART TTL debug lines have been fanned out as test pads on the PDB for debugging purposes.
+- The LSM6DSV IMU is located at the bottom of the MCB
 - LCSC component IDs are attached in the KiCad source files for direct JLCPCB fabrication and assembly.
 
 ### Communication Ports
 
 | Port Type | Quantity | Details |
 |-----------|----------|---------|
-| CAN (Native) | 3 | Direct CAN interfaces |
-| CAN (SPI-CAN) | 3 | CAN via SPI bridge |
-| USB 2.0 | 3 | USB interfaces |
+| CAN (SPI-CAN) | 6 | CAN via SPI bridge |
+| USB 2.0 | 2 | USB interfaces |
 | Ethernet | 1 | 1Gbps |
-| RS485 | 2 | Serial communication |
 | I2C | 1 | I2C interface |
 
 ### Port Mapping
 
 | Port ID | Purpose |
 |---------|---------|
-| C0 | Left leg bus |
-| C1 | Right leg bus |
-| C2 | Right arm bus |
-| C3 | Left arm bus |
-| C4 | Waist-neck bus |
-| C5 | BMS bus |
+| LL | Left leg bus |
+| RL | Right leg bus |
+| LA | Left arm bus |
+| RA | Right arm bus |
+| NP | Neck pitch connection for the torso bus |
+| NY | Neck yaw connection for the torso bus |
+| W  | Waist yaw connection for the torso bus |
 
-> The waist-neck bus requires a different cabling setup for this revision of the MCB: Waist -> Neck yaw -> Neck pitch -> MCB port C4
+> Please refer to the KiCAD source files for a detailed view of all pin mappings on the PDB
+
+## Media Unit
+
+The head of the robot contains a RPI5, with 2 boards to support its function.
+
+Head board:
+- contains buck converters to power the RPI5 with 5V
+- an audio IC to handle the stereo microphones and stereo speakers, although only 1 speaker output is currently used
+
+RPI5 Hat:
+- a small hat that allows for a clean 5V connection to the headers of the RPI5
+- contains a button, LED and buzzer for basic status messages, similar to a consumer motherboard
 
 ## Wiring
 
-![WireViz](https://github.com/wireviz/WireViz) was utilised for representing the wiring harness of the robot. 
+- Each line refers to a pre-made cable on the robot
+- Certain connections can only be complete post assembly due to space contraints. These connections have been marked with the Joint names WAGO or SOLDER.
 
-Please refer to WireViz documentation for available visualisation options.
-### Cable Naming Convention
-
-```
-W-<ID>-<TYPE>
-ID = unique ID
-TYPE = Power (PWR) or Signal (SIG) cable bundle
-```
+> If making cables from scratch, double-check wire pathing to make sure there is sufficient slack on each connection.
 
 
 

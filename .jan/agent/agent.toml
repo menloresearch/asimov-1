@@ -1,0 +1,54 @@
+[agent]
+# model = "Jan-V4"
+# context_window = 128000  # tokens; defaults to 128K if unset
+# compaction_reserve_tokens = 16384  # headroom before auto-compaction; defaults to 16K
+# max_tokens = 4096  # cap on tokens the model generates per response (OpenAI max_tokens); omitted if unset
+# max_parallel_subagents = 10  # max concurrently-running subagents per run; extra dispatches queue FIFO
+# show_reasoning = false  # expand  reasoning in the transcript (Ctrl-O still toggles)
+# send_reasoning = true  # resend prior reasoning to the model; false drops it from the request
+#                        # (a provider that rejects the field is detected and stripped automatically)
+
+# Project-local provider override. Wins over ~/.jan/config.toml and any
+# provider inherited from Jan Desktop's settings.json. Most projects don't
+# need this and should rely on the global scope instead.
+# [provider]
+# name = "openai"
+# api_key = "sk-..."
+# base_url = "https://api.openai.com/v1"
+# models = ["gpt-4o"]
+
+# The run's only cap: new token spend across all turns (replayed context is not
+# recharged each turn). There is no turn limit. Defaults to 128000 when unset;
+# 0 disables the cap so the agent runs until the task is done or cancelled.
+[budget]
+# max_tokens = 128000
+
+[tools]
+# read-only | deny | allow. read-only (default) exposes MCP tools and built-in
+# reads; built-in writes/exec go through the permission gate. deny locks down
+# all MCP tools.
+default = "read-only"
+# Exposed even under deny; deny-list wins over everything:
+allow = []
+deny = []
+# Write tools are opt-in only:
+# allow_write = ["fs.write"]
+allow_write = []
+# Whether the sandboxed shell can reach the network. Unset follows the surface
+# running the agent: the CLI allows it, the desktop's throwaway chat sandbox
+# does not.
+# allow_network = true
+# Whether the sandboxed shell can read your home directory (for git/ssh
+# credential helpers and ~/.ssh/config). Unset follows the surface: the CLI
+# allows it (true), the desktop masks $HOME. Writes stay in the workspace.
+# allow_home_read = true
+# Whether `bash` runs under OS confinement at all. Unset follows the surface:
+# the CLI runs unconfined unless you pass --sandbox or set sandbox = true in
+# ~/.jan/config.toml; the desktop always confines. Set it here to require
+# confinement for anyone working in this project.
+# sandbox = true
+
+[skills]
+enabled = []
+# always | relevance
+inject = "always"
