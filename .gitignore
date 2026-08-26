@@ -5,6 +5,7 @@ __pycache__/
 # Format documentation: https://kicad.org/help/file-formats/
 
 # Temporary files
+.jan/
 production/
 *.000
 *.bak
