@@ -1,0 +1,33 @@
+Joint_1,Joint_2,Length (mm),End_1,End_2,Qty
+Left Shoulder Pitch,SOLDER,180,XT30F(2+2),N/A,1
+Left Shoulder Roll,SOLDER,100,XT30F(2+2),N/A,1
+Left Shoulder Roll,Left Shoulder Yaw,100,XT30F(2+2),XT30F(2+2),1
+Left Shoulder Yaw,WAGO,180,XT30F(2+2),N/A,1
+Left Elbow,WAGO,100,XT30F(2+2),N/A,1
+Left Elbow,Left Wrist Yaw,230,XT30F(2+2),XT30F(2+2),1
+Right Shoulder Pitch,SOLDER,180,XT30F(2+2),N/A,1
+Right Shoulder Roll,SOLDER,100,XT30F(2+2),N/A,1
+Right Shoulder Roll,Right Shoulder Yaw,100,XT30F(2+2),XT30F(2+2),1
+Right Shoulder Yaw,WAGO,180,XT30F(2+2),N/A,1
+Right Elbow,WAGO,100,XT30F(2+2),N/A,1
+Right Elbow,Right Wrist Yaw,230,XT30F(2+2),XT30F(2+2),1
+Left Hip Pitch,Left Hip Roll,200,XT30F(2+2),XT30F(2+2),1
+Left Hip Roll,SOLDER,180,XT30F(2+2),N/A,1
+Left Hip Yaw,SOLDER,280,XT30F(2+2),N/A,1
+Left Hip Yaw,Left Knee,150,XT30F(2+2),XT30F(2+2),1
+Left Knee,Left Ankle A,100,XT30F(2+2),XT30F(2+2),1
+Left Ankle A,Left Ankle B,100,XT30F(2+2),XT30F(2+2),1
+Right Hip Pitch,Right Hip Roll,200,XT30F(2+2),XT30F(2+2),1
+Right Hip Roll,SOLDER,180,XT30F(2+2),N/A,1
+Right Hip Yaw,SOLDER,280,XT30F(2+2),N/A,1
+Right Hip Yaw,Right Knee,150,XT30F(2+2),XT30F(2+2),1
+Right Knee,Right Ankle A,100,XT30F(2+2),XT30F(2+2),1
+Right Ankle A,Right Ankle B,100,XT30F(2+2),XT30F(2+2),1
+Neck Yaw,Neck Pitch,200,XT30F(2+2),XT30F(2+2),1
+RPU,Waist Yaw,300,XT30F(2+2),XT30F(2+2),1
+RPU,Left Hip Pitch,300,XT30F(2+2),XT30F(2+2),1
+RPU ,Right Hip Pitch,300,XT30F(2+2),XT30F(2+2),1
+RPU ,Left Shoulder Pitch,400,XT30F(2+2),XT30F(2+2),1
+RPU ,Right Shoulder Pitch,400,XT30F(2+2),XT30F(2+2),1
+RPU,Neck Yaw,600,XT30F(2+2),XT30F(2+2),1
+RPU ,Neck Pitch,600,XT30F(2+2),XT30F(2+2),1

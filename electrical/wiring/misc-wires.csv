@@ -1,0 +1,8 @@
+Joint_1,Joint_2,Length (mm),End_1,End_2,Qty
+RPU,RPI,1000,RJ45 Male,RJ45 Male,1
+RPU,Head Board,1000,XT30-F,XT30-M,1
+RPU,Fan,100,JST-XH 4 pin ,SOLDER,1
+Head Board,RPI 5 Hat,120,JST-XH 4 pin,JST-XH 4 pin,1
+Head Board,RPI,100,USB-C,USB-A,1
+Head Board,WAGO,100,JST-XH 4 pin,N/A,1
+Speaker,WAGO,200,SOLDER,N/A,1
