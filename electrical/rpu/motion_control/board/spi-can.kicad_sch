@@ -226,6 +226,28 @@
 					)
 				)
 			)
+			(property private "KLC_S3.3" "The rectangle is not a symbol body but a graphical element"
+				(at 0 -12.7 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property private "KLC_S4.1" "Some pins are on 50mil grid to make the symbol small"
+				(at 0 -15.24 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(property "ki_keywords" "quartz ceramic resonator oscillator"
 				(at 0 0 0)
 				(show_name no)
@@ -310,18 +332,6 @@
 				)
 				(polyline
 					(pts
-						(xy 0 3.556) (xy 0 3.81)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
 						(xy 0 -3.81) (xy 0 -3.556)
 					)
 					(stroke
@@ -377,9 +387,9 @@
 					)
 				)
 				(pin passive line
-					(at 0 5.08 270)
+					(at 0 -5.08 90)
 					(length 1.27)
-					(name "2"
+					(name "G"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -415,7 +425,8 @@
 				(pin passive line
 					(at 0 -5.08 90)
 					(length 1.27)
-					(name "4"
+					(hide yes)
+					(name "G"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -574,14 +585,17 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Interface_CAN_LIN:MCP2518FD-xQBB"
+		(symbol "Interface_CAN_LIN:SN65HVD230"
+			(pin_names
+				(offset 1.016)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "U"
-				(at 8.89 13.97 0)
+				(at -2.54 10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -591,8 +605,8 @@
 					(justify right)
 				)
 			)
-			(property "Value" "MCP2518FD-xQBB"
-				(at -3.81 13.97 0)
+			(property "Value" "SN65HVD230"
+				(at -2.54 7.62 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -602,8 +616,8 @@
 					(justify right)
 				)
 			)
-			(property "Footprint" "Package_DFN_QFN:DFN-14-1EP_3x4.5mm_P0.65mm_EP1.65x4.25mm"
-				(at 1.27 -13.97 0)
+			(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+				(at 0 -12.7 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -611,11 +625,10 @@
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Datasheet" "https://ww1.microchip.com/downloads/aemDocuments/documents/OTH/ProductDocuments/DataSheets/External-CAN-FD-Controller-with-SPI-Interface-DS20006027B.pdf"
-				(at 1.27 -16.51 0)
+			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/sn65hvd230.pdf"
+				(at -2.54 10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -623,10 +636,9 @@
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Description" "CAN FD Controller with SPI Interface, up to 8 Mbps, Vdd 2.7..5.5V,  functional safety ready, VDFN-14"
+			(property "Description" "CAN Bus Transceivers, 3.3V, 1Mbps, Low-Power capabilities, SOIC-8"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -637,7 +649,253 @@
 					)
 				)
 			)
-			(property "ki_keywords" "microchip"
+			(property "ki_keywords" "can transeiver ti low-power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "SOIC*3.9x4.9mm*P1.27mm*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SN65HVD230_0_1"
+				(rectangle
+					(start -7.62 5.08)
+					(end 7.62 -7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "SN65HVD230_1_1"
+				(pin input line
+					(at -10.16 2.54 0)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -10.16 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 7.62 270)
+					(length 2.54)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -10.16 0 0)
+					(length 2.54)
+					(name "R"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -10.16 -2.54 0)
+					(length 2.54)
+					(name "Vref"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 10.16 -2.54 180)
+					(length 2.54)
+					(name "CANL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 10.16 0 180)
+					(length 2.54)
+					(name "CANH"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 -5.08 0)
+					(length 2.54)
+					(name "Rs"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "lcsc_lib:MCP2518FDT"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at -12.7 12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "MCP2518FDT"
+				(at 2.54 12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+				(at 5.08 -20.32 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Datasheet" "https://ww1.microchip.com/downloads/en/DeviceDoc/MCP2517FD-External-CAN-FD-Controller-with-SPI-Interface-20005688B.pdf"
+				(at 5.08 -17.78 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Description" "External CAN FD Controller with SPI Interface, VDFN-14"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "CAN FD Controller SPI"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -659,7 +917,7 @@
 					)
 				)
 			)
-			(symbol "MCP2518FD-xQBB_0_1"
+			(symbol "MCP2518FDT_0_1"
 				(rectangle
 					(start -12.7 10.16)
 					(end 12.7 -10.16)
@@ -672,7 +930,7 @@
 					)
 				)
 			)
-			(symbol "MCP2518FD-xQBB_1_1"
+			(symbol "MCP2518FDT_1_1"
 				(pin output line
 					(at 15.24 5.08 180)
 					(length 2.54)
@@ -937,253 +1195,6 @@
 						)
 					)
 					(number "15"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Interface_CAN_LIN:SN65HVD230"
-			(pin_names
-				(offset 1.016)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "U"
-				(at -2.54 10.16 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify right)
-				)
-			)
-			(property "Value" "SN65HVD230"
-				(at -2.54 7.62 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify right)
-				)
-			)
-			(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-				(at 0 -12.7 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/sn65hvd230.pdf"
-				(at -2.54 10.16 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "CAN Bus Transceivers, 3.3V, 1Mbps, Low-Power capabilities, SOIC-8"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "can transeiver ti low-power"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "SOIC*3.9x4.9mm*P1.27mm*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "SN65HVD230_0_1"
-				(rectangle
-					(start -7.62 5.08)
-					(end 7.62 -7.62)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "SN65HVD230_1_1"
-				(pin input line
-					(at -10.16 2.54 0)
-					(length 2.54)
-					(name "D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -10.16 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 7.62 270)
-					(length 2.54)
-					(name "VCC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at -10.16 0 0)
-					(length 2.54)
-					(name "R"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at -10.16 -2.54 0)
-					(length 2.54)
-					(name "Vref"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 10.16 -2.54 180)
-					(length 2.54)
-					(name "CANL"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 10.16 0 180)
-					(length 2.54)
-					(name "CANH"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -10.16 -5.08 0)
-					(length 2.54)
-					(name "Rs"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1666,16 +1677,6 @@
 	)
 	(wire
 		(pts
-			(xy 29.21 135.89) (xy 29.21 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "066b7d40-3255-423c-a4f8-dfd1620410e8")
-	)
-	(wire
-		(pts
 			(xy 175.26 24.13) (xy 175.26 26.67)
 		)
 		(stroke
@@ -1683,16 +1684,6 @@
 			(type default)
 		)
 		(uuid "09fb91f1-0717-465f-94a0-37cba5f3fa77")
-	)
-	(wire
-		(pts
-			(xy 167.64 39.37) (xy 175.26 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0a6773f9-9cab-4ccd-936a-4d3fe0a02acc")
 	)
 	(wire
 		(pts
@@ -1713,16 +1704,6 @@
 			(type default)
 		)
 		(uuid "11b11c31-a649-420f-90d5-ae081ee7e04d")
-	)
-	(wire
-		(pts
-			(xy 29.21 39.37) (xy 36.83 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1328f768-de53-42ce-8b63-58d4b0575d9f")
 	)
 	(wire
 		(pts
@@ -1826,26 +1807,6 @@
 	)
 	(wire
 		(pts
-			(xy 29.21 40.64) (xy 29.21 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2ad6c3fc-17af-43eb-b441-beb128d13643")
-	)
-	(wire
-		(pts
-			(xy 170.18 135.89) (xy 170.18 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2b0d54f8-afb0-4869-9596-5c13faaeeef6")
-	)
-	(wire
-		(pts
 			(xy 246.38 27.94) (xy 246.38 29.21)
 		)
 		(stroke
@@ -1863,16 +1824,6 @@
 			(type default)
 		)
 		(uuid "2e8c4e50-2ae9-4b9b-9033-846f4e25afc2")
-	)
-	(wire
-		(pts
-			(xy 168.91 86.36) (xy 176.53 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2f1e557b-cc92-4ad0-a08d-cf8b66e1018c")
 	)
 	(wire
 		(pts
@@ -2236,26 +2187,6 @@
 	)
 	(wire
 		(pts
-			(xy 29.21 86.36) (xy 36.83 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7c3805a8-59ac-48cb-8282-10a7ed9dd281")
-	)
-	(wire
-		(pts
-			(xy 29.21 87.63) (xy 29.21 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "813b5728-c4c4-4afb-b48f-27e87bdf6cf2")
-	)
-	(wire
-		(pts
 			(xy 246.38 29.21) (xy 252.73 29.21)
 		)
 		(stroke
@@ -2496,16 +2427,6 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 40.64) (xy 167.64 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b463e1e7-7332-4777-bfa3-d2a3649acee1")
-	)
-	(wire
-		(pts
 			(xy 171.45 91.44) (xy 171.45 104.14)
 		)
 		(stroke
@@ -2583,16 +2504,6 @@
 			(type default)
 		)
 		(uuid "c6b4e5b1-41f6-4b29-bf7e-d4144e3f1c5d")
-	)
-	(wire
-		(pts
-			(xy 170.18 134.62) (xy 177.8 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c96cb801-b35a-4d84-b934-d6c565ecae49")
 	)
 	(wire
 		(pts
@@ -2846,16 +2757,6 @@
 	)
 	(wire
 		(pts
-			(xy 29.21 134.62) (xy 36.83 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f73a9ac9-bedf-4b45-9c2a-6a9cc31ca6b5")
-	)
-	(wire
-		(pts
 			(xy 96.52 124.46) (xy 105.41 124.46)
 		)
 		(stroke
@@ -2893,16 +2794,6 @@
 			(type default)
 		)
 		(uuid "fd02e8ef-1b6a-4ab5-a466-80c51908758e")
-	)
-	(wire
-		(pts
-			(xy 168.91 87.63) (xy 168.91 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fe4eb820-ec2d-4707-a9de-332e68b94c28")
 	)
 	(wire
 		(pts
@@ -4271,6 +4162,129 @@
 		)
 	)
 	(symbol
+		(lib_id "lcsc_lib:MCP2518FDT")
+		(at 81.28 81.28 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "05168e0b-0a6f-4c2b-8d90-e9376cf7d4bb")
+		(property "Reference" "U603"
+			(at 83.4233 66.04 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MCP2518FDT"
+			(at 83.4233 68.58 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+			(at 86.36 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "https://ww1.microchip.com/downloads/en/DeviceDoc/MCP2517FD-External-CAN-FD-Controller-with-SPI-Interface-20005688B.pdf"
+			(at 86.36 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "External CAN FD Controller with SPI Interface, VDFN-14"
+			(at 81.28 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fc2912cc-579d-4100-b843-b91006d17ee7")
+		)
+		(pin "8"
+			(uuid "7aada983-e5ae-4e19-b0e4-0e58b1b20059")
+		)
+		(pin "7"
+			(uuid "40cb1a7c-3b2d-4845-9aca-29750d8a9065")
+		)
+		(pin "6"
+			(uuid "8f1d4a41-3774-4bed-a3f4-caaf88665549")
+		)
+		(pin "5"
+			(uuid "e6079623-ef06-441e-821e-f1708dc1fb01")
+		)
+		(pin "4"
+			(uuid "55807e14-c2d8-4487-8b1e-80a0aef33f73")
+		)
+		(pin "3"
+			(uuid "f6bc3774-534a-4f89-b0b4-1139b7a6c4d6")
+		)
+		(pin "2"
+			(uuid "1aee6ab9-0127-4942-bc2d-2d999aaada95")
+		)
+		(pin "15"
+			(uuid "e58eae6c-2193-4ad7-aac9-f56e7359a469")
+		)
+		(pin "14"
+			(uuid "89b1a03e-d8bd-4192-ba8e-348e1e205cb5")
+		)
+		(pin "13"
+			(uuid "51f381c4-3539-4e15-afbb-e10bdb4ba535")
+		)
+		(pin "12"
+			(uuid "4a0077de-a573-4325-92f0-f772f8ad5802")
+		)
+		(pin "11"
+			(uuid "452036bf-49cb-452e-927b-51245663d4c5")
+		)
+		(pin "10"
+			(uuid "c8877b9e-6bfa-40c6-b705-1817403a832e")
+		)
+		(pin "9"
+			(uuid "a85c805b-8312-4915-8e0b-621e7e84a183")
+		)
+		(instances
+			(project "board"
+				(path "/992ecbaf-83c2-4c1c-a6f6-75d6908eecbe/5fb5aff1-72df-4332-8bea-4c43bfe8ad8c"
+					(reference "U603")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3V3")
 		(at 222.25 116.84 0)
 		(unit 1)
@@ -4533,83 +4547,6 @@
 			(project "board"
 				(path "/992ecbaf-83c2-4c1c-a6f6-75d6908eecbe/5fb5aff1-72df-4332-8bea-4c43bfe8ad8c"
 					(reference "C606")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 29.21 87.63 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "15f2c374-afe4-4f7d-9cac-53a97212fc89")
-		(property "Reference" "#PWR0603"
-			(at 29.21 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 27.432 91.186 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 29.21 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 29.21 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 29.21 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "52836c42-074c-4444-bb34-37efa46ad10f")
-		)
-		(instances
-			(project "board"
-				(path "/992ecbaf-83c2-4c1c-a6f6-75d6908eecbe/5fb5aff1-72df-4332-8bea-4c43bfe8ad8c"
-					(reference "#PWR0603")
 					(unit 1)
 				)
 			)
@@ -5230,6 +5167,129 @@
 		)
 	)
 	(symbol
+		(lib_id "lcsc_lib:MCP2518FDT")
+		(at 220.98 81.28 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2f8fd845-3584-4023-9832-4ac78c07dc36")
+		(property "Reference" "U608"
+			(at 223.1233 66.04 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MCP2518FDT"
+			(at 223.1233 68.58 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+			(at 226.06 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "https://ww1.microchip.com/downloads/en/DeviceDoc/MCP2517FD-External-CAN-FD-Controller-with-SPI-Interface-20005688B.pdf"
+			(at 226.06 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "External CAN FD Controller with SPI Interface, VDFN-14"
+			(at 220.98 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4d787192-cdf6-4ec0-9df0-e3ef953df7ec")
+		)
+		(pin "8"
+			(uuid "7e29eb73-044b-4ffe-af9b-e3b8d2e2c5ab")
+		)
+		(pin "7"
+			(uuid "23abaf3b-e668-4a02-82fb-d56a080e4174")
+		)
+		(pin "6"
+			(uuid "78ec4d1b-1e99-4aba-bc42-9f1ff7ed378a")
+		)
+		(pin "5"
+			(uuid "40f6fcb9-3a68-4c6e-832c-39059846f270")
+		)
+		(pin "4"
+			(uuid "1e6f095b-6cda-466a-a555-abc34ff39da8")
+		)
+		(pin "3"
+			(uuid "af2263c1-3e84-43c7-b14c-555691e32dcd")
+		)
+		(pin "2"
+			(uuid "7f0fbb0e-3424-402d-b89b-9ac28c09c17a")
+		)
+		(pin "15"
+			(uuid "01bf01a9-f2ad-4be9-8b71-076b0bc39609")
+		)
+		(pin "14"
+			(uuid "51e8c118-254a-4b8b-b4ed-c54701589f82")
+		)
+		(pin "13"
+			(uuid "82674559-314d-4f4b-9804-6c6c67e0c95c")
+		)
+		(pin "12"
+			(uuid "f9d479b5-11e6-4124-b1ce-65cfbcd843d7")
+		)
+		(pin "11"
+			(uuid "79c18316-4e2e-4d74-8887-d59fa242a721")
+		)
+		(pin "10"
+			(uuid "16a36165-d10a-4055-b8fb-43b034f09f5f")
+		)
+		(pin "9"
+			(uuid "b4495930-93cf-4152-911b-9dd42de0087e")
+		)
+		(instances
+			(project "board"
+				(path "/992ecbaf-83c2-4c1c-a6f6-75d6908eecbe/5fb5aff1-72df-4332-8bea-4c43bfe8ad8c"
+					(reference "U608")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 36.83 109.22 0)
 		(unit 1)
@@ -5710,140 +5770,6 @@
 			(project "board"
 				(path "/992ecbaf-83c2-4c1c-a6f6-75d6908eecbe/5fb5aff1-72df-4332-8bea-4c43bfe8ad8c"
 					(reference "#PWR0613")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Interface_CAN_LIN:MCP2518FD-xQBB")
-		(at 81.28 34.29 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3dc16cca-0398-422f-b5f1-9c7c1f5ed310")
-		(property "Reference" "U602"
-			(at 83.4233 19.05 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MCP2518FD-xQBB"
-			(at 83.4233 21.59 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 82.55 48.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Datasheet" "https://ww1.microchip.com/downloads/aemDocuments/documents/OTH/ProductDocuments/DataSheets/External-CAN-FD-Controller-with-SPI-Interface-DS20006027B.pdf"
-			(at 82.55 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Description" "CAN FD Controller with SPI Interface, up to 8 Mbps, Vdd 2.7..5.5V,  functional safety ready, VDFN-14"
-			(at 81.28 34.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C626758"
-			(at 81.28 34.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "4"
-			(uuid "13650b29-354c-4901-b3f0-eb72bd69978a")
-		)
-		(pin "15"
-			(uuid "cd5eef2e-a35c-4eb4-882e-aa471359728a")
-		)
-		(pin "8"
-			(uuid "bc16858d-56d2-4289-aad4-84ecef4f4421")
-		)
-		(pin "9"
-			(uuid "c7f9d4f5-a135-4c59-ae4f-6fad73a994db")
-		)
-		(pin "13"
-			(uuid "9f8f8bff-da97-423d-9e10-10d2bf3ff4a3")
-		)
-		(pin "10"
-			(uuid "9b6b3b7d-1697-439c-bd3c-f832ac05383d")
-		)
-		(pin "5"
-			(uuid "ea49c546-5f52-4bdf-93e6-40215b43004c")
-		)
-		(pin "1"
-			(uuid "3401aee5-ade8-4aab-99a5-562b7e591e6b")
-		)
-		(pin "3"
-			(uuid "5c77ecc9-4522-46b0-83fc-06951b2e508a")
-		)
-		(pin "2"
-			(uuid "7066624b-68ab-4cbf-b982-d509bce0c8d9")
-		)
-		(pin "12"
-			(uuid "7fa82e58-aa5b-4a34-9bdb-57ba1ed72798")
-		)
-		(pin "7"
-			(uuid "a88abd71-e4b1-49da-95d0-6894be19f581")
-		)
-		(pin "11"
-			(uuid "4152a194-4258-4359-8175-08970ab67816")
-		)
-		(pin "6"
-			(uuid "93e9aeee-cbc4-47f8-b614-63177fbaa102")
-		)
-		(pin "14"
-			(uuid "c8fedeee-5961-4e9b-a280-afbe98167110")
-		)
-		(instances
-			(project "board"
-				(path "/992ecbaf-83c2-4c1c-a6f6-75d6908eecbe/5fb5aff1-72df-4332-8bea-4c43bfe8ad8c"
-					(reference "U602")
 					(unit 1)
 				)
 			)
@@ -6335,8 +6261,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 170.18 135.89 0)
+		(lib_id "lcsc_lib:MCP2518FDT")
+		(at 222.25 129.54 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6344,9 +6270,32 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "4f3768d2-9031-40f7-9e6d-388e1b8abf6b")
-		(property "Reference" "#PWR0627"
-			(at 170.18 142.24 0)
+		(fields_autoplaced yes)
+		(uuid "5033abef-c36b-435c-92ed-1c4141039d2c")
+		(property "Reference" "U609"
+			(at 224.3933 114.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MCP2518FDT"
+			(at 224.3933 116.84 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+			(at 227.33 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6354,20 +6303,11 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "GND"
-			(at 168.402 139.446 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 170.18 135.89 0)
+		(property "Datasheet" "https://ww1.microchip.com/downloads/en/DeviceDoc/MCP2517FD-External-CAN-FD-Controller-with-SPI-Interface-20005688B.pdf"
+			(at 227.33 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6375,21 +6315,11 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Datasheet" ""
-			(at 170.18 135.89 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 170.18 135.89 0)
+		(property "Description" "External CAN FD Controller with SPI Interface, VDFN-14"
+			(at 222.25 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6400,19 +6330,61 @@
 			)
 		)
 		(pin "1"
-			(uuid "4ed22e67-54d1-4165-915d-9ad370d58ccc")
+			(uuid "7b4a663a-f858-438c-8318-4d18fa5e960b")
+		)
+		(pin "8"
+			(uuid "ee8dd4dd-b512-4258-9aaa-ae26803da404")
+		)
+		(pin "7"
+			(uuid "8d95b391-19f6-4825-8cfd-3ae3689d3751")
+		)
+		(pin "6"
+			(uuid "b04053e4-f96b-48ab-afa7-fe2fbaa9f350")
+		)
+		(pin "5"
+			(uuid "4c24cd38-eeb3-4b9f-9278-ab98489ff726")
+		)
+		(pin "4"
+			(uuid "487340e7-0b6a-4c6a-9bf5-cb5dfc3529f3")
+		)
+		(pin "3"
+			(uuid "2645b85e-1b9d-4c7d-8cb5-0bcf0c261be1")
+		)
+		(pin "2"
+			(uuid "e4fa5058-0a01-41d2-8ced-1168f89b77a4")
+		)
+		(pin "15"
+			(uuid "3e9e025a-19d7-4f13-8180-3fab8a0345ba")
+		)
+		(pin "14"
+			(uuid "101c413c-8663-4fd3-87b2-00aef9f5d90d")
+		)
+		(pin "13"
+			(uuid "cd4a74fd-ad12-4fe0-801e-1b0a71f4c7f5")
+		)
+		(pin "12"
+			(uuid "c4272eda-f4a3-452a-8760-b6cfd2d4ee0e")
+		)
+		(pin "11"
+			(uuid "3bdcc67b-5998-49dc-a3b7-49f96b828e0d")
+		)
+		(pin "10"
+			(uuid "677494f9-7e98-448c-934c-01950896ae4f")
+		)
+		(pin "9"
+			(uuid "9da2807d-06f5-4705-b51b-7c3e052c883e")
 		)
 		(instances
 			(project "board"
 				(path "/992ecbaf-83c2-4c1c-a6f6-75d6908eecbe/5fb5aff1-72df-4332-8bea-4c43bfe8ad8c"
-					(reference "#PWR0627")
+					(reference "U609")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Interface_CAN_LIN:MCP2518FD-xQBB")
+		(lib_id "lcsc_lib:MCP2518FDT")
 		(at 81.28 129.54 0)
 		(unit 1)
 		(body_style 1)
@@ -6422,7 +6394,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "4f763fc5-5ad0-4661-95aa-1bfa08b05e1d")
+		(uuid "5146f99d-ee2b-4026-a8ff-98a37dc5d318")
 		(property "Reference" "U601"
 			(at 83.4233 114.3 0)
 			(show_name no)
@@ -6434,7 +6406,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MCP2518FD-xQBB"
+		(property "Value" "MCP2518FDT"
 			(at 83.4233 116.84 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6446,7 +6418,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 82.55 143.51 0)
+			(at 86.36 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6457,8 +6429,8 @@
 				(justify left)
 			)
 		)
-		(property "Datasheet" "https://ww1.microchip.com/downloads/aemDocuments/documents/OTH/ProductDocuments/DataSheets/External-CAN-FD-Controller-with-SPI-Interface-DS20006027B.pdf"
-			(at 82.55 146.05 0)
+		(property "Datasheet" "https://ww1.microchip.com/downloads/en/DeviceDoc/MCP2517FD-External-CAN-FD-Controller-with-SPI-Interface-20005688B.pdf"
+			(at 86.36 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6469,7 +6441,7 @@
 				(justify left)
 			)
 		)
-		(property "Description" "CAN FD Controller with SPI Interface, up to 8 Mbps, Vdd 2.7..5.5V,  functional safety ready, VDFN-14"
+		(property "Description" "External CAN FD Controller with SPI Interface, VDFN-14"
 			(at 81.28 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -6479,62 +6451,51 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(property "LCSC" "C626758"
-			(at 81.28 129.54 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "4"
-			(uuid "435e77a0-f232-42e3-bb3b-218e5e434ae1")
-		)
-		(pin "15"
-			(uuid "c0075634-2075-4ccb-90c0-43a1d958c13a")
-		)
-		(pin "8"
-			(uuid "9f1fbd53-444b-4fef-abfd-f0f28953c620")
-		)
-		(pin "9"
-			(uuid "5256962f-7629-4696-bee4-b3552a2c9749")
-		)
-		(pin "13"
-			(uuid "1ec68eb9-0844-4038-ad42-cf4e94aac9d5")
-		)
-		(pin "10"
-			(uuid "b8ce748e-b5bd-420c-93fa-c50fcd5e601f")
-		)
-		(pin "5"
-			(uuid "89dc5f64-4972-4126-b49f-d3cf5361378b")
 		)
 		(pin "1"
-			(uuid "d32cebae-5652-44ab-902a-6ed5b55d4215")
+			(uuid "74402931-4e1a-4f37-a3fc-23029468750e")
 		)
-		(pin "3"
-			(uuid "80f54a14-0994-41e9-b239-7395dc475407")
-		)
-		(pin "2"
-			(uuid "c91448cb-4b06-4afc-ad79-4ab7871187ed")
-		)
-		(pin "12"
-			(uuid "6a3bbac5-407f-4375-922f-e50c1eac0c9a")
+		(pin "8"
+			(uuid "20171df2-88e3-4aa7-a6b0-e2db80249f22")
 		)
 		(pin "7"
-			(uuid "ef4080d8-07d5-46e6-89f9-0e80c899fba8")
-		)
-		(pin "11"
-			(uuid "1ed4da25-12d5-41a6-ab98-e1df29525847")
+			(uuid "ae03bc3e-5bdc-4341-aab9-a334a19bfd33")
 		)
 		(pin "6"
-			(uuid "eea4c606-fa38-4546-bdc3-dfa17b7000e6")
+			(uuid "aa62d1bb-648b-4e1c-880e-29a7ed376a4b")
+		)
+		(pin "5"
+			(uuid "e2ddb036-6e7f-4072-8a11-6e03dc646115")
+		)
+		(pin "4"
+			(uuid "dd37832d-d977-4ee5-823b-63746b7954da")
+		)
+		(pin "3"
+			(uuid "61c54b34-ac17-4150-a1d2-30f2f675073c")
+		)
+		(pin "2"
+			(uuid "3c3f1905-9b3e-4e16-af24-e5b00a71e2c5")
+		)
+		(pin "15"
+			(uuid "f88864be-6239-4b3f-95a1-8fc54d974569")
 		)
 		(pin "14"
-			(uuid "7639ef0c-a7f6-40c3-a3ed-2d64cce51a27")
+			(uuid "9734879e-01c4-4b6b-95bb-214fa97b0fff")
+		)
+		(pin "13"
+			(uuid "7c5bf11f-5580-4c85-9033-14fcca3a66cb")
+		)
+		(pin "12"
+			(uuid "05c48f3d-53e6-4de4-becb-cfb5175e6050")
+		)
+		(pin "11"
+			(uuid "0de0fbbc-463d-43f4-8f80-b5c006afd462")
+		)
+		(pin "10"
+			(uuid "115d4471-4478-46eb-ad4a-188d33e8423b")
+		)
+		(pin "9"
+			(uuid "8c2bc427-7416-4c88-b14d-e94bdec81109")
 		)
 		(instances
 			(project "board"
@@ -6696,140 +6657,6 @@
 			(project "board"
 				(path "/992ecbaf-83c2-4c1c-a6f6-75d6908eecbe/5fb5aff1-72df-4332-8bea-4c43bfe8ad8c"
 					(reference "#PWR0618")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Interface_CAN_LIN:MCP2518FD-xQBB")
-		(at 222.25 129.54 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5c7a7398-3d85-4c5a-a8db-397e17a094fa")
-		(property "Reference" "U609"
-			(at 224.3933 114.3 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MCP2518FD-xQBB"
-			(at 224.3933 116.84 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 223.52 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Datasheet" "https://ww1.microchip.com/downloads/aemDocuments/documents/OTH/ProductDocuments/DataSheets/External-CAN-FD-Controller-with-SPI-Interface-DS20006027B.pdf"
-			(at 223.52 146.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Description" "CAN FD Controller with SPI Interface, up to 8 Mbps, Vdd 2.7..5.5V,  functional safety ready, VDFN-14"
-			(at 222.25 129.54 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C626758"
-			(at 222.25 129.54 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "4"
-			(uuid "0f1a83a0-add7-4c07-96e1-4b222223aa46")
-		)
-		(pin "15"
-			(uuid "0005a8fc-2aee-4d1e-b51f-0aaa9020e790")
-		)
-		(pin "8"
-			(uuid "55945231-b465-4c8d-9df4-342e3d843ec9")
-		)
-		(pin "9"
-			(uuid "b3f97198-98b4-4f98-8c89-fb118aff97df")
-		)
-		(pin "13"
-			(uuid "d63b59c2-41ed-48d6-a836-9f2787b95483")
-		)
-		(pin "10"
-			(uuid "8a1222e8-8065-48e7-aaa3-a1d8d595dac3")
-		)
-		(pin "5"
-			(uuid "ec13dd7b-da18-4d99-9545-fc1be511a2b4")
-		)
-		(pin "1"
-			(uuid "3ddd84e5-11d8-4277-a2fa-7982814e3082")
-		)
-		(pin "3"
-			(uuid "1976cfeb-244d-4fcb-9cb3-7e1403ba3290")
-		)
-		(pin "2"
-			(uuid "c089936b-9d49-4cc2-82d7-0ed0fcf7e201")
-		)
-		(pin "12"
-			(uuid "bff294e6-caf2-4999-8821-2370a69ad80b")
-		)
-		(pin "7"
-			(uuid "0542f2a3-0bd9-4a93-8dcf-3cb96bfbede7")
-		)
-		(pin "11"
-			(uuid "597c2ae7-3497-4f43-ac28-ced931c2d59e")
-		)
-		(pin "6"
-			(uuid "c8b749c9-b690-4a67-8459-5b89bdb0cda5")
-		)
-		(pin "14"
-			(uuid "256f0ac6-2dae-44e1-931a-21d62209d8a8")
-		)
-		(instances
-			(project "board"
-				(path "/992ecbaf-83c2-4c1c-a6f6-75d6908eecbe/5fb5aff1-72df-4332-8bea-4c43bfe8ad8c"
-					(reference "U609")
 					(unit 1)
 				)
 			)
@@ -7149,6 +6976,129 @@
 			(project "board"
 				(path "/992ecbaf-83c2-4c1c-a6f6-75d6908eecbe/5fb5aff1-72df-4332-8bea-4c43bfe8ad8c"
 					(reference "U606")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "lcsc_lib:MCP2518FDT")
+		(at 219.71 34.29 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6e634700-895f-4e76-a1fa-31bd63c3c3cd")
+		(property "Reference" "U607"
+			(at 221.8533 19.05 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MCP2518FDT"
+			(at 221.8533 21.59 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+			(at 224.79 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "https://ww1.microchip.com/downloads/en/DeviceDoc/MCP2517FD-External-CAN-FD-Controller-with-SPI-Interface-20005688B.pdf"
+			(at 224.79 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "External CAN FD Controller with SPI Interface, VDFN-14"
+			(at 219.71 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "29b770c6-4e2b-4f6a-9509-268bc681a6c0")
+		)
+		(pin "8"
+			(uuid "f65e9a6d-9b3b-46e3-9486-ff3d5905da79")
+		)
+		(pin "7"
+			(uuid "602880ab-25de-415b-8152-fa56f7936258")
+		)
+		(pin "6"
+			(uuid "2bf38189-d200-4648-a0c5-300a88de6503")
+		)
+		(pin "5"
+			(uuid "91d94e06-bdfd-4bd9-9ea2-9d6d3655af6a")
+		)
+		(pin "4"
+			(uuid "a9fad02e-33a4-4ad5-8002-5d68364c790e")
+		)
+		(pin "3"
+			(uuid "ce5ced0a-ecb5-4185-93bb-978b9e324ad6")
+		)
+		(pin "2"
+			(uuid "e82fc836-2baa-44b7-861b-bfffa4eabec4")
+		)
+		(pin "15"
+			(uuid "85bf9aad-8e48-4420-a14a-81fcb42ff847")
+		)
+		(pin "14"
+			(uuid "6e928c2e-3b5b-4a41-a8eb-77eb60c20dfc")
+		)
+		(pin "13"
+			(uuid "8aec5fd0-f6f8-46e0-a443-328886d13811")
+		)
+		(pin "12"
+			(uuid "095ccffc-442d-4db4-b62e-30954973ec66")
+		)
+		(pin "11"
+			(uuid "6b7325cf-234b-48fd-bc7e-8398a05b2740")
+		)
+		(pin "10"
+			(uuid "1eb2b2a4-e74c-443a-931f-df2b8e232548")
+		)
+		(pin "9"
+			(uuid "7ad4e387-817d-4966-8302-90ecc222f5d2")
+		)
+		(instances
+			(project "board"
+				(path "/992ecbaf-83c2-4c1c-a6f6-75d6908eecbe/5fb5aff1-72df-4332-8bea-4c43bfe8ad8c"
+					(reference "U607")
 					(unit 1)
 				)
 			)
@@ -7588,140 +7538,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Interface_CAN_LIN:MCP2518FD-xQBB")
-		(at 220.98 81.28 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8544cd5c-6984-460c-8780-5a5fd97aa0c8")
-		(property "Reference" "U608"
-			(at 223.1233 66.04 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MCP2518FD-xQBB"
-			(at 223.1233 68.58 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 222.25 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Datasheet" "https://ww1.microchip.com/downloads/aemDocuments/documents/OTH/ProductDocuments/DataSheets/External-CAN-FD-Controller-with-SPI-Interface-DS20006027B.pdf"
-			(at 222.25 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Description" "CAN FD Controller with SPI Interface, up to 8 Mbps, Vdd 2.7..5.5V,  functional safety ready, VDFN-14"
-			(at 220.98 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C626758"
-			(at 220.98 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "4"
-			(uuid "150e383d-0a29-444a-b1bf-1f192a0afd10")
-		)
-		(pin "15"
-			(uuid "e749d3d1-a95b-4fb6-af1a-36e6461a60ef")
-		)
-		(pin "8"
-			(uuid "cdb01a04-28f2-4be5-a89d-ce30b22d3706")
-		)
-		(pin "9"
-			(uuid "b3fff491-5114-4ddf-abc9-45e526e77982")
-		)
-		(pin "13"
-			(uuid "657324f0-aba0-46b1-bd4a-54deb2f2d3a9")
-		)
-		(pin "10"
-			(uuid "5bfe16ef-382b-46a8-84ae-feaa48911d27")
-		)
-		(pin "5"
-			(uuid "4f5290ef-8ffc-459f-b538-237429c7333d")
-		)
-		(pin "1"
-			(uuid "b7794e9f-fcfc-4f5c-a7a3-2295586badf4")
-		)
-		(pin "3"
-			(uuid "5d02860b-26da-4ee4-8922-32aea7f73c3c")
-		)
-		(pin "2"
-			(uuid "39d49e6c-d4f1-4ca7-8deb-29857aed6d0b")
-		)
-		(pin "12"
-			(uuid "4c1a855e-4ab4-47b0-a6ae-7431cd4b3a40")
-		)
-		(pin "7"
-			(uuid "c8838655-0c1a-4329-a21a-3226810c6254")
-		)
-		(pin "11"
-			(uuid "7b91461a-3344-46dc-9833-b3ddaf4701db")
-		)
-		(pin "6"
-			(uuid "2eb7b98e-0a9f-428f-8ce3-7c179780a70f")
-		)
-		(pin "14"
-			(uuid "88f2ac90-f04d-4062-a415-880e3cb5633f")
-		)
-		(instances
-			(project "board"
-				(path "/992ecbaf-83c2-4c1c-a6f6-75d6908eecbe/5fb5aff1-72df-4332-8bea-4c43bfe8ad8c"
-					(reference "U608")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Small")
 		(at 182.88 154.94 0)
 		(unit 1)
@@ -7986,83 +7802,6 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 29.21 135.89 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "919705e2-ff88-4012-af5e-6c8a517b2959")
-		(property "Reference" "#PWR0601"
-			(at 29.21 142.24 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 27.432 139.446 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 29.21 135.89 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 29.21 135.89 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 29.21 135.89 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "278cff17-67fd-4cd3-9a1f-7af717ee50a2")
-		)
-		(instances
-			(project "board"
-				(path "/992ecbaf-83c2-4c1c-a6f6-75d6908eecbe/5fb5aff1-72df-4332-8bea-4c43bfe8ad8c"
-					(reference "#PWR0601")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
 		(at 222.25 142.24 0)
 		(unit 1)
 		(body_style 1)
@@ -8134,140 +7873,6 @@
 			(project "board"
 				(path "/992ecbaf-83c2-4c1c-a6f6-75d6908eecbe/5fb5aff1-72df-4332-8bea-4c43bfe8ad8c"
 					(reference "#PWR0639")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Interface_CAN_LIN:MCP2518FD-xQBB")
-		(at 219.71 34.29 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "966834e2-7b77-40e9-9d9f-48d37f538e90")
-		(property "Reference" "U607"
-			(at 221.8533 19.05 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MCP2518FD-xQBB"
-			(at 221.8533 21.59 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 220.98 48.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Datasheet" "https://ww1.microchip.com/downloads/aemDocuments/documents/OTH/ProductDocuments/DataSheets/External-CAN-FD-Controller-with-SPI-Interface-DS20006027B.pdf"
-			(at 220.98 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Description" "CAN FD Controller with SPI Interface, up to 8 Mbps, Vdd 2.7..5.5V,  functional safety ready, VDFN-14"
-			(at 219.71 34.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C626758"
-			(at 219.71 34.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "4"
-			(uuid "b26177c9-676c-4177-82a5-8e8ca80b6f17")
-		)
-		(pin "15"
-			(uuid "74b72f9c-abb2-4c52-937b-53f306ae5aef")
-		)
-		(pin "8"
-			(uuid "640b81f8-f7d2-41c4-8863-f70f7152d220")
-		)
-		(pin "9"
-			(uuid "8711bfdf-3760-4439-9f5f-bd7720616374")
-		)
-		(pin "13"
-			(uuid "6212f382-cbe9-4aeb-9264-37f902bed3e4")
-		)
-		(pin "10"
-			(uuid "d036d3cc-b6e7-4bf8-9018-0739c4fc4865")
-		)
-		(pin "5"
-			(uuid "c5306719-d187-4334-b4e5-bb1d14ceb372")
-		)
-		(pin "1"
-			(uuid "9fd84653-b9b8-4269-869a-efa4a15d09de")
-		)
-		(pin "3"
-			(uuid "b05db93e-90b2-4bb2-bbe5-b64a13cec833")
-		)
-		(pin "2"
-			(uuid "2ae30e57-f9b9-4dd1-a20f-937fe12df873")
-		)
-		(pin "12"
-			(uuid "74744d06-e5ba-4802-b551-9bfe9c5caa00")
-		)
-		(pin "7"
-			(uuid "94e4ca9d-1675-4570-9cce-e51d9e812d07")
-		)
-		(pin "11"
-			(uuid "e66c86e4-e597-4b33-b2ac-c58e03a9ee3c")
-		)
-		(pin "6"
-			(uuid "05d1b7eb-9b78-4e61-8f1d-db45a63fc869")
-		)
-		(pin "14"
-			(uuid "a3b35f55-e30d-4b04-aa3e-fb7556810c95")
-		)
-		(instances
-			(project "board"
-				(path "/992ecbaf-83c2-4c1c-a6f6-75d6908eecbe/5fb5aff1-72df-4332-8bea-4c43bfe8ad8c"
-					(reference "U607")
 					(unit 1)
 				)
 			)
@@ -8578,217 +8183,6 @@
 			(project "board"
 				(path "/992ecbaf-83c2-4c1c-a6f6-75d6908eecbe/5fb5aff1-72df-4332-8bea-4c43bfe8ad8c"
 					(reference "#PWR0620")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 167.64 40.64 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "a01af6fe-77f1-4ef7-994f-47b0dd4e184d")
-		(property "Reference" "#PWR0625"
-			(at 167.64 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 165.862 44.196 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 167.64 40.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 167.64 40.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 167.64 40.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "39e236a4-8191-436d-9b73-5d57dd95b23e")
-		)
-		(instances
-			(project "board"
-				(path "/992ecbaf-83c2-4c1c-a6f6-75d6908eecbe/5fb5aff1-72df-4332-8bea-4c43bfe8ad8c"
-					(reference "#PWR0625")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Interface_CAN_LIN:MCP2518FD-xQBB")
-		(at 81.28 81.28 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a1a5cbe8-f877-4915-a3f4-cea7057d6548")
-		(property "Reference" "U603"
-			(at 83.4233 66.04 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MCP2518FD-xQBB"
-			(at 83.4233 68.58 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 82.55 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Datasheet" "https://ww1.microchip.com/downloads/aemDocuments/documents/OTH/ProductDocuments/DataSheets/External-CAN-FD-Controller-with-SPI-Interface-DS20006027B.pdf"
-			(at 82.55 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Description" "CAN FD Controller with SPI Interface, up to 8 Mbps, Vdd 2.7..5.5V,  functional safety ready, VDFN-14"
-			(at 81.28 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C626758"
-			(at 81.28 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "4"
-			(uuid "fb45470f-bc0f-426a-b907-7bf52d912565")
-		)
-		(pin "15"
-			(uuid "1f1eb0fb-5bc9-48ec-8c7d-cabb2ddd6409")
-		)
-		(pin "8"
-			(uuid "545b5173-18a3-4257-8e59-bd113a6574d0")
-		)
-		(pin "9"
-			(uuid "4ad3ae66-8058-487d-a869-1845d3c7dc92")
-		)
-		(pin "13"
-			(uuid "ff2c6c40-bc21-4df6-904c-bf2897735a33")
-		)
-		(pin "10"
-			(uuid "34b5fcf7-f738-4f80-a2d3-73fb0de3b0cb")
-		)
-		(pin "5"
-			(uuid "a30b1ade-a52a-4e9f-b24b-6dc9f29b0d97")
-		)
-		(pin "1"
-			(uuid "5ac6574e-e77f-419b-9c01-c23c8b0a2833")
-		)
-		(pin "3"
-			(uuid "2460f4b6-fe7b-4473-93a7-bfe311029653")
-		)
-		(pin "2"
-			(uuid "1c6571a0-daae-4595-b996-69be126fc44e")
-		)
-		(pin "12"
-			(uuid "07fb4aa9-da01-4ba7-a22f-d917940a15e1")
-		)
-		(pin "7"
-			(uuid "ae8649a2-e82e-467d-802a-39dc76dac195")
-		)
-		(pin "11"
-			(uuid "e43f2c84-ac94-4992-b274-b99df9e0dab9")
-		)
-		(pin "6"
-			(uuid "b83b732b-2ef3-4129-8523-c58ee8b1c792")
-		)
-		(pin "14"
-			(uuid "6f099896-9a69-4773-a53c-2ade12fa65e8")
-		)
-		(instances
-			(project "board"
-				(path "/992ecbaf-83c2-4c1c-a6f6-75d6908eecbe/5fb5aff1-72df-4332-8bea-4c43bfe8ad8c"
-					(reference "U603")
 					(unit 1)
 				)
 			)
@@ -10241,6 +9635,129 @@
 		)
 	)
 	(symbol
+		(lib_id "lcsc_lib:MCP2518FDT")
+		(at 81.28 34.29 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dd476798-21df-4f41-b75c-88f2c58383bd")
+		(property "Reference" "U602"
+			(at 83.4233 19.05 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MCP2518FDT"
+			(at 83.4233 21.59 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+			(at 86.36 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "https://ww1.microchip.com/downloads/en/DeviceDoc/MCP2517FD-External-CAN-FD-Controller-with-SPI-Interface-20005688B.pdf"
+			(at 86.36 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "External CAN FD Controller with SPI Interface, VDFN-14"
+			(at 81.28 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "87f304bd-a88f-47ee-9693-887b3056c507")
+		)
+		(pin "8"
+			(uuid "7a28baa2-656d-409f-b249-b12f963c5470")
+		)
+		(pin "7"
+			(uuid "bb6563ad-d374-4495-bfe6-14587b6ae8dc")
+		)
+		(pin "6"
+			(uuid "8cda46d5-b2b8-4f0c-a392-ed75cacf64f1")
+		)
+		(pin "5"
+			(uuid "d8460608-2270-4c34-81e7-c54dafc6a388")
+		)
+		(pin "4"
+			(uuid "9aad19e4-16cf-4599-907d-a6d00d209392")
+		)
+		(pin "3"
+			(uuid "2ec89057-065e-4643-9d79-e43f95228e68")
+		)
+		(pin "2"
+			(uuid "00090292-ff46-4cd1-8fce-9d8b4a8f2e77")
+		)
+		(pin "15"
+			(uuid "2a176189-e4bd-4e6b-a94a-165bc7abf487")
+		)
+		(pin "14"
+			(uuid "ab7af264-6728-4bc5-86e2-68237f3cc502")
+		)
+		(pin "13"
+			(uuid "736f6246-cbe5-46ef-877c-84319ef2136c")
+		)
+		(pin "12"
+			(uuid "22dba7f4-a359-40c9-a930-f8a4b512069a")
+		)
+		(pin "11"
+			(uuid "4bab3b62-15c2-4431-b26f-4471726e252a")
+		)
+		(pin "10"
+			(uuid "9ce40322-05b2-448b-ab15-315b23de95aa")
+		)
+		(pin "9"
+			(uuid "bceb9d4b-e5d2-416f-89c9-e180b8b9841a")
+		)
+		(instances
+			(project "board"
+				(path "/992ecbaf-83c2-4c1c-a6f6-75d6908eecbe/5fb5aff1-72df-4332-8bea-4c43bfe8ad8c"
+					(reference "U602")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 176.53 109.22 0)
 		(unit 1)
@@ -10313,83 +9830,6 @@
 			(project "board"
 				(path "/992ecbaf-83c2-4c1c-a6f6-75d6908eecbe/5fb5aff1-72df-4332-8bea-4c43bfe8ad8c"
 					(reference "#PWR0631")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 29.21 40.64 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "e1a2b487-2208-4857-b7f7-b5c72a97b376")
-		(property "Reference" "#PWR0602"
-			(at 29.21 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 27.432 44.196 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 29.21 40.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 29.21 40.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 29.21 40.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "b2961c85-864e-48c4-b571-1a8577204be5")
-		)
-		(instances
-			(project "board"
-				(path "/992ecbaf-83c2-4c1c-a6f6-75d6908eecbe/5fb5aff1-72df-4332-8bea-4c43bfe8ad8c"
-					(reference "#PWR0602")
 					(unit 1)
 				)
 			)
@@ -10857,83 +10297,6 @@
 			(project "board"
 				(path "/992ecbaf-83c2-4c1c-a6f6-75d6908eecbe/5fb5aff1-72df-4332-8bea-4c43bfe8ad8c"
 					(reference "#PWR0617")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 168.91 87.63 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "f0cc280e-4189-4541-adae-25b451fe57f9")
-		(property "Reference" "#PWR0626"
-			(at 168.91 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 167.132 91.186 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 168.91 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 168.91 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 168.91 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "c0b27b80-141f-4a06-877a-da4edcf84cd2")
-		)
-		(instances
-			(project "board"
-				(path "/992ecbaf-83c2-4c1c-a6f6-75d6908eecbe/5fb5aff1-72df-4332-8bea-4c43bfe8ad8c"
-					(reference "#PWR0626")
 					(unit 1)
 				)
 			)

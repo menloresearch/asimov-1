@@ -153,7 +153,7 @@
         "max_error": 0.005,
         "min_clearance": 0.2,
         "min_connection": 0.0,
-        "min_copper_edge_clearance": 0.0,
+        "min_copper_edge_clearance": 0.2,
         "min_groove_width": 0.0,
         "min_hole_clearance": 0.25,
         "min_hole_to_hole": 0.2,
@@ -256,6 +256,10 @@
         {
           "diameter": 0.35,
           "drill": 0.2
+        },
+        {
+          "diameter": 0.6,
+          "drill": 0.3
         }
       ],
       "zones_allow_external_fillets": false
@@ -539,6 +543,21 @@
         "via_diameter": 0.8,
         "via_drill": 0.4,
         "wire_width": 6
+      },
+      {
+        "clearance": 0.2,
+        "diff_pair_gap": 0.14224,
+        "diff_pair_width": 0.22987,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "90Ohm-JLC04161H-762890Ohm-JLC04161H-7628",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2,
+        "tuning_profile": "",
+        "via_diameter": 0.5,
+        "via_drill": 0.3
       }
     ],
     "meta": {
@@ -546,7 +565,40 @@
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "90Ohm-JLC04161H-762890Ohm-JLC04161H-7628",
+        "pattern": "/USB2Hub/DFP1_D+"
+      },
+      {
+        "netclass": "90Ohm-JLC04161H-762890Ohm-JLC04161H-7628",
+        "pattern": "/USB2Hub/DFP1_D-"
+      },
+      {
+        "netclass": "90Ohm-JLC04161H-762890Ohm-JLC04161H-7628",
+        "pattern": "/USB2Hub/DFP4_D+"
+      },
+      {
+        "netclass": "90Ohm-JLC04161H-762890Ohm-JLC04161H-7628",
+        "pattern": "/USB2Hub/DFP4_D-"
+      },
+      {
+        "netclass": "90Ohm-JLC04161H-762890Ohm-JLC04161H-7628",
+        "pattern": "/USB2Hub/UFP_D-"
+      },
+      {
+        "netclass": "90Ohm-JLC04161H-762890Ohm-JLC04161H-7628",
+        "pattern": "/USB2Hub/UFP_D+"
+      },
+      {
+        "netclass": "90Ohm-JLC04161H-762890Ohm-JLC04161H-7628",
+        "pattern": "/U13B/USB2_D+"
+      },
+      {
+        "netclass": "90Ohm-JLC04161H-762890Ohm-JLC04161H-7628",
+        "pattern": "/U13B/USB2_D-"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
@@ -718,7 +770,7 @@
         "uuid": "992ecbaf-83c2-4c1c-a6f6-75d6908eecbe"
       }
     ],
-    "used_designators": "",
+    "used_designators": "SW201,#FLG101-104,#FLG201,#FLG701-702,TP701-703,USB301,R201-202,R301-302,R501-504,R601-606,R701-712,U101,U201-203,U301,U401,U501-504,U601-613,U701-702,Y601-606,Y701,#PWR101-117,#PWR201-217,#PWR301-303,#PWR401-402,#PWR501-536,#PWR601-648,#PWR701-731,C101-103,C201-205,C501-508,C601-612,C701-713,D101-103,J101-106",
     "variants": []
   },
   "sheets": [
@@ -745,6 +797,10 @@
     [
       "5fb5aff1-72df-4332-8bea-4c43bfe8ad8c",
       "SPI-CAN"
+    ],
+    [
+      "499fd3a0-6107-4cf4-a73b-9f53f665d392",
+      "USB2Hub"
     ]
   ],
   "text_variables": {},
