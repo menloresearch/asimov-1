@@ -3020,6 +3020,12 @@
 		(uuid "0e7da65d-9f35-4121-991a-b7649cc0c4ea")
 	)
 	(junction
+		(at 44.45 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "15baac5a-f62b-4725-9441-4763a01fa5a4")
+	)
+	(junction
 		(at 182.88 116.84)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3072,12 +3078,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "978db2a4-e6b7-4ac7-8e21-42b91f18a800")
-	)
-	(junction
-		(at 44.45 93.98)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a8ad38a0-5f00-4c7e-a3ca-6695699a02fa")
 	)
 	(junction
 		(at 102.87 86.36)
@@ -7145,106 +7145,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x04_Socket")
-		(at 39.37 88.9 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d9e8c065-3ef7-4039-b7f8-747c6074d078")
-		(property "Reference" "J102"
-			(at 38.1 88.8999 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "5V_IN"
-			(at 38.1 91.4399 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical"
-			(at 39.37 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 39.37 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x04, script generated"
-			(at 39.37 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C144395"
-			(at 39.37 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "c3b2d6c7-c568-49fa-a2e2-c15ac8220cd5")
-		)
-		(pin "4"
-			(uuid "d7e6717d-9f1f-4e7c-8490-4a512585bb84")
-		)
-		(pin "2"
-			(uuid "c99e733d-3801-49f7-9ca1-1396c7388d68")
-		)
-		(pin "1"
-			(uuid "d22fe2a4-b37e-4250-aea4-b07d21fc5a5c")
-		)
-		(instances
-			(project "board"
-				(path "/29e64e60-14ac-49fa-a4d0-21e58b105b3c"
-					(reference "J102")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Mechanical:MountingHole")
 		(at 31.75 123.19 0)
 		(unit 1)
@@ -7825,6 +7725,104 @@
 			(project "board"
 				(path "/29e64e60-14ac-49fa-a4d0-21e58b105b3c"
 					(reference "#PWR0117")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x04_Socket")
+		(at 39.37 91.44 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ed9a8310-dde2-4c4b-b117-1337d91d0bb7")
+		(property "Reference" "J102"
+			(at 38.1 91.4401 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "5V_IN"
+			(at 38.1 88.9001 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical"
+			(at 39.37 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 39.37 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x04, script generated"
+			(at 39.37 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C144395"
+			(at 39.37 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "fc54e4e2-5bfd-45bf-bf55-1c31a17626ec")
+		)
+		(pin "4"
+			(uuid "73fe32cc-b41f-409b-a5a4-967c5372ecbc")
+		)
+		(pin "2"
+			(uuid "24b9082d-f708-4cbb-b80b-b642a60d1d52")
+		)
+		(pin "1"
+			(uuid "f25c8ec7-9861-441c-a9bd-5cc13a6d8a64")
+		)
+		(instances
+			(project "board"
+				(path "/29e64e60-14ac-49fa-a4d0-21e58b105b3c"
+					(reference "J102")
 					(unit 1)
 				)
 			)
