@@ -1570,7 +1570,7 @@
 				)
 			)
 		)
-		(property "Value" "LED"
+		(property "Value" "Green LED"
 			(at 0 1.43 90)
 			(layer "F.Fab")
 			(uuid "e8964725-da5c-42d5-82d6-56bc61d553e4")
@@ -3239,7 +3239,7 @@
 				)
 			)
 		)
-		(property "Value" "LED"
+		(property "Value" "Red LED"
 			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "6a55fbc7-a4e0-4441-a288-426b89899e1a")
@@ -3297,7 +3297,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C965804"
+		(property "LCSC" "C2286"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
