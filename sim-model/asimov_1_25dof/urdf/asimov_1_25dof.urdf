@@ -1,0 +1,915 @@
+<?xml version="1.0" ?>
+<robot name="asimov_1_25dof">
+  <mujoco>
+    <compiler strippath="false" discardvisual="false"/>
+  </mujoco>
+  <link name="pelvis_link">
+    <inertial>
+      <origin xyz="-0.0538829622051086 -3.3135952726658E-05 -0.0141851211653591" rpy="0 0 0" />
+      <mass value="3.66427873863" />
+      <inertia ixx="0.00553870890929" ixy="4.30594887964e-06" ixz="-7.87358336315e-05" iyy="0.00627468279865" iyz="-5.46445562395e-07" izz="0.00526862351796" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/pelvis_link.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.04 0 -0.0125" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.04" length="0.075" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.04 0 -0.05" rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.04" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.04 0 0.025" rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.04" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="left_hip_pitch_link">
+    <inertial>
+      <origin xyz="0.00228931670250886 0.0356616717993186 0.000492567843696154" rpy="0 0 0" />
+      <mass value="1.17530444054" />
+      <inertia ixx="0.000739647202626" ixy="-3.21221729449e-05" ixz="1.80857198108e-06" iyy="0.000898213447694" iyz="1.02593105474e-05" izz="0.000825494322411" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/left_hip_pitch_link.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0.03 0" rpy="1.5708 0 0" />
+      <geometry>
+        <cylinder radius="0.04" length="0.02" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="0 0.04 0" rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.04" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="0 0.02 0" rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.04" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_hip_pitch_joint" type="revolute">
+    <origin xyz="-0.0519919979 0.06849986203 -0.044045" rpy="0 0 0"/>
+    <parent link="pelvis_link"/>
+    <child link="left_hip_pitch_link"/>
+    <axis xyz="0 1 0"/>
+    <limit lower="-1.57" upper="1.57" effort="45" velocity="12.57"/>
+  </joint>
+  <link name="left_hip_roll_link">
+    <inertial>
+      <origin xyz="-0.0115504800430217 0.000344147936134312 -0.0293955899778532" rpy="0 0 0" />
+      <mass value="0.441692207548" />
+      <inertia ixx="0.000283069710646" ixy="-2.41212318284e-06" ixz="-0.000123447377417" iyy="0.000381079758917" iyz="-3.32706040445e-06" izz="0.000250021405498" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/left_hip_roll_link.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+        </link>
+  <joint name="left_hip_roll_joint" type="revolute">
+    <origin xyz="0.0422501 0.04000027594 0" rpy="0 0 0"/>
+    <parent link="left_hip_pitch_link"/>
+    <child link="left_hip_roll_link"/>
+    <axis xyz="1 0 0"/>
+    <limit lower="-0.7854" upper="0.7854" effort="45" velocity="3.98"/>
+  </joint>
+  <link name="left_hip_yaw_link">
+    <inertial>
+      <origin xyz="0.00108353056396971 0.00107124993612173 -0.120285488476869" rpy="0 0 0" />
+      <mass value="1.94908290192" />
+      <inertia ixx="0.00363669745492" ixy="9.1488114936e-06" ixz="1.6483764389e-05" iyy="0.00379789545522" iyz="-0.000126735328058" izz="0.00144661678999" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/left_hip_yaw_link.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.085" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.04" length="0.07" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="0 0 -0.12" rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.04" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="0 0 -0.05" rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.04" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_hip_yaw_joint" type="revolute">
+    <origin xyz="-0.04225 0 -0.052" rpy="0 0 0"/>
+    <parent link="left_hip_roll_link"/>
+    <child link="left_hip_yaw_link"/>
+    <axis xyz="0 0 -1"/>
+    <limit lower="-0.7854" upper="0.7854" effort="28" velocity="5.45"/>
+  </joint>
+  <link name="left_knee_link">
+    <inertial>
+      <origin xyz="-0.00135199876187857 0.000591730076054453 -0.10935923104366" rpy="0 0 0" />
+      <mass value="2.47708152034" />
+      <inertia ixx="0.0100958685895" ixy="7.05140327403e-06" ixz="-0.000663103146467" iyy="0.0102328381517" iyz="-7.35137676848e-06" izz="0.00244388650391" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/left_knee_link.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.866666666666667 0.909803921568627 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.13" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.04" length="0.18" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="0 0 -0.22" rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.04" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="0 0 -0.04" rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.04" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_knee_joint" type="revolute">
+    <origin xyz="0 0 -0.19564" rpy="0 0 0"/>
+    <parent link="left_hip_yaw_link"/>
+    <child link="left_knee_link"/>
+    <axis xyz="0 1 0"/>
+    <limit lower="0" upper="1.5" effort="45" velocity="12.25"/>
+  </joint>
+  <link name="left_ankle_pitch_link">
+    <inertial>
+      <origin xyz="-0.00117930892005939 2.01510102076918E-08 -0.00617609487717152" rpy="0 0 0" />
+      <mass value="0.291028288432" />
+      <inertia ixx="6.84874341431e-05" ixy="1.42996873697e-11" ixz="-1.1460345046e-06" iyy="8.63145196839e-05" iyz="1.21450030636e-11" izz="5.02931632798e-05" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/left_ankle_pitch_link.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+        </link>
+  <joint name="left_ankle_pitch_joint" type="revolute">
+    <origin xyz="0 0 -0.2946623361" rpy="0 0 0"/>
+    <parent link="left_knee_link"/>
+    <child link="left_ankle_pitch_link"/>
+    <axis xyz="0 1 0"/>
+    <limit lower="-0.35" upper="0.35" effort="40" velocity="9.32"/>
+  </joint>
+  <link name="left_ankle_roll_link">
+    <inertial>
+      <origin xyz="0.0540498716302167 7.88469515830559E-07 -0.0189919787977786" rpy="0 0 0" />
+      <mass value="0.471619064339" />
+      <inertia ixx="0.00017682714781" ixy="1.96461348311e-09" ixz="9.58979057298e-06" iyy="0.000994293713002" iyz="-1.36936844656e-09" izz="0.00112987923367" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/left_ankle_roll_link.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.045 0.02 -0.029" rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.005" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.045 -0.02 -0.029" rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.005" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.122 0.028 -0.029" rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.005" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.122 -0.028 -0.029" rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.005" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_ankle_roll_joint" type="revolute">
+    <origin xyz="-0.0015 0 -0.009999992" rpy="0 0 0"/>
+    <parent link="left_ankle_pitch_link"/>
+    <child link="left_ankle_roll_link"/>
+    <axis xyz="-1 0 0"/>
+    <limit lower="-0.1" upper="0.1" effort="17" velocity="9.32"/>
+  </joint>
+  <link name="right_hip_pitch_link">
+    <inertial>
+      <origin xyz="0.00227984012124999 -0.035664597017509 0.000500905580678834" rpy="0 0 0" />
+      <mass value="1.17554964822" />
+      <inertia ixx="0.00073977082998" ixy="3.21185178627e-05" ixz="1.8153476803e-06" iyy="0.000898343271818" iyz="-1.02957285593e-05" izz="0.00082547707695" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/right_hip_pitch_link.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 -0.03 0" rpy="-1.5708 0 0" />
+      <geometry>
+        <cylinder radius="0.04" length="0.02" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="0 -0.04 0" rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.04" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="0 -0.02 0" rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.04" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_hip_pitch_joint" type="revolute">
+    <origin xyz="-0.0519919979 -0.06850013797 -0.044045" rpy="0 0 0"/>
+    <parent link="pelvis_link"/>
+    <child link="right_hip_pitch_link"/>
+    <axis xyz="0 -1 0"/>
+    <limit lower="-1.57" upper="1.57" effort="45" velocity="12.57"/>
+  </joint>
+  <link name="right_hip_roll_link">
+    <inertial>
+      <origin xyz="-0.0115504200883402 -0.000351067877333716 -0.029395451118144" rpy="0 0 0" />
+      <mass value="0.441693932839" />
+      <inertia ixx="0.00028306834267" ixy="2.42740357604e-06" ixz="-0.000123447817368" iyy="0.00038108064704" iyz="3.30239452721e-06" izz="0.000250019925719" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/right_hip_roll_link.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+        </link>
+  <joint name="right_hip_roll_joint" type="revolute">
+    <origin xyz="0.0422501 -0.04000027594 0" rpy="0 0 0"/>
+    <parent link="right_hip_pitch_link"/>
+    <child link="right_hip_roll_link"/>
+    <axis xyz="1 0 0"/>
+    <limit lower="-0.7854" upper="0.7854" effort="45" velocity="3.98"/>
+  </joint>
+  <link name="right_hip_yaw_link">
+    <inertial>
+      <origin xyz="0.00107937431801225 -0.00106802720390411 -0.120292181943606" rpy="0 0 0" />
+      <mass value="1.94896850585" />
+      <inertia ixx="0.00363621183052" ixy="-9.64505626595e-06" ixz="1.66482203751e-05" iyy="0.00379760257448" iyz="0.000126724109756" izz="0.00144660389256" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/right_hip_yaw_link.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.085" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.04" length="0.07" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="0 0 -0.12" rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.04" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="0 0 -0.05" rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.04" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_hip_yaw_joint" type="revolute">
+    <origin xyz="-0.04225 0 -0.052" rpy="0 0 0"/>
+    <parent link="right_hip_roll_link"/>
+    <child link="right_hip_yaw_link"/>
+    <axis xyz="0 0 -1"/>
+    <limit lower="-0.7854" upper="0.7854" effort="28" velocity="5.45"/>
+  </joint>
+  <link name="right_knee_link">
+    <inertial>
+      <origin xyz="-0.00135227149017234 -0.000591824130466143 -0.109359197500634" rpy="0 0 0" />
+      <mass value="2.47707271768" />
+      <inertia ixx="0.0100958427683" ixy="-7.09541573915e-06" ixz="-0.000663207576989" iyy="0.0102328394936" iyz="7.33683089025e-06" izz="0.00244387725673" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/right_knee_link.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.866666666666667 0.909803921568627 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.13" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.04" length="0.18" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="0 0 -0.22" rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.04" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="0 0 -0.04" rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.04" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_knee_joint" type="revolute">
+    <origin xyz="0 0 -0.19564" rpy="0 0 0"/>
+    <parent link="right_hip_yaw_link"/>
+    <child link="right_knee_link"/>
+    <axis xyz="0 -1 0"/>
+    <limit lower="-1.5" upper="0" effort="45" velocity="12.25"/>
+  </joint>
+  <link name="right_ankle_pitch_link">
+    <inertial>
+      <origin xyz="-0.00117934594174639 1.96995576795533E-09 -0.00617615428394913" rpy="0 0 0" />
+      <mass value="0.291029016987" />
+      <inertia ixx="6.84878118319e-05" ixy="-1.21300977247e-10" ixz="-1.14614181117e-06" iyy="8.63150027953e-05" iyz="8.98604996006e-11" izz="5.02929927002e-05" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/right_ankle_pitch_link.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+        </link>
+  <joint name="right_ankle_pitch_joint" type="revolute">
+    <origin xyz="0 0 -0.2946623361" rpy="0 0 0"/>
+    <parent link="right_knee_link"/>
+    <child link="right_ankle_pitch_link"/>
+    <axis xyz="0 -1 0"/>
+    <limit lower="-0.35" upper="0.35" effort="40" velocity="9.32"/>
+  </joint>
+  <link name="right_ankle_roll_link">
+    <inertial>
+      <origin xyz="0.0540495035165056 3.09635944495401E-07 -0.0189897093867073" rpy="0 0 0" />
+      <mass value="0.471646468047" />
+      <inertia ixx="0.000176831853865" ixy="2.67448843003e-09" ixz="9.59658239956e-06" iyy="0.000994316830564" iyz="-3.64823231786e-09" izz="0.00112990082325" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/right_ankle_roll_link.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.045 0.02 -0.029" rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.005" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.045 -0.02 -0.029" rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.005" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.122 0.028 -0.029" rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.005" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.122 -0.028 -0.029" rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.005" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_ankle_roll_joint" type="revolute">
+    <origin xyz="-0.0015 0 -0.009999992" rpy="0 0 0"/>
+    <parent link="right_ankle_pitch_link"/>
+    <child link="right_ankle_roll_link"/>
+    <axis xyz="-1 0 0"/>
+    <limit lower="-0.1" upper="0.1" effort="17" velocity="9.32"/>
+  </joint>
+  <link name="waist_yaw_link">
+    <inertial>
+      <origin xyz="-0.00755389311516205 -2.53781636126611E-05 0.207001606444853" rpy="0 0 0" />
+      <mass value="8.67319251934" />
+      <inertia ixx="0.0525634035996" ixy="-1.78527426096e-05" ixz="0.00380905219602" iyy="0.0426020792097" iyz="-5.77214105439e-06" izz="0.0344422923437" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/waist_yaw_link.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.175" rpy="3.14159 0 0" />
+      <geometry>
+        <cylinder radius="0.06" length="0.25" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="0 0 0.3" rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.06" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="0 0 0.05" rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.06" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="waist_yaw_joint" type="revolute">
+    <origin xyz="-0.0519919979 0 0.074755" rpy="0 0 0"/>
+    <parent link="pelvis_link"/>
+    <child link="waist_yaw_link"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-1.5708" upper="1.5708" effort="40" velocity="12.57"/>
+  </joint>
+  <link name="neck_yaw_link">
+    <inertial>
+      <origin xyz="-0.000342559404129722 -0.00069072380007333 0.035697656485879" rpy="0 0 0" />
+      <mass value="0.575650910682" />
+      <inertia ixx="0.000285400780281" ixy="4.34645282483e-11" ixz="1.29233966789e-05" iyy="0.00026813187776" iyz="-7.61770497185e-11" izz="0.000218884977232" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/neck_yaw_link.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+        </link>
+  <joint name="neck_yaw_joint" type="revolute">
+    <origin xyz="-0.01659877455 0 0.37817729" rpy="0 0 0"/>
+    <parent link="waist_yaw_link"/>
+    <child link="neck_yaw_link"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-1.57" upper="1.57" effort="12" velocity="9.32"/>
+  </joint>
+  <link name="neck_pitch_link">
+    <inertial>
+      <origin xyz="0.0145630460851513 -0.000203931470408418 0.04216219676795" rpy="0 0 0" />
+      <mass value="0.554496351091" />
+      <inertia ixx="0.00123484082512" ixy="-1.14335634374e-05" ixz="0.000143741253471" iyy="0.0017600550422" iyz="-6.53057689472e-06" izz="0.00196152524206" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/neck_pitch_link.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.03 0 0.02" rpy="3.14159 0 0" />
+      <geometry>
+        <cylinder radius="0.05" length="0.04" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.03 0 0.04" rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.05" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.03 0 0" rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.05" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="neck_pitch_joint" type="revolute">
+    <origin xyz="0 0 0.03735" rpy="0 0 0"/>
+    <parent link="neck_yaw_link"/>
+    <child link="neck_pitch_link"/>
+    <axis xyz="0 -1 0"/>
+    <limit lower="-0.34" upper="0.4" effort="12" velocity="9.32"/>
+  </joint>
+  <link name="right_shoulder_pitch_link">
+    <inertial>
+      <origin xyz="0.000222674139598866 -0.0204426849230806 2.81339430351357E-05" rpy="0 0 0" />
+      <mass value="0.436608291106" />
+      <inertia ixx="0.000343036865579" ixy="-2.46831305045e-07" ixz="2.8561967374e-10" iyy="0.000325708005664" iyz="-3.25039506099e-09" izz="0.000343956754814" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/right_shoulder_pitch_link.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.866666666666667 0.909803921568627 1 1" />
+      </material>
+    </visual>
+        </link>
+  <joint name="right_shoulder_pitch_joint" type="revolute">
+    <origin xyz="-0.02621282535 -0.0965 0.2611404833" rpy="0 0 0"/>
+    <parent link="waist_yaw_link"/>
+    <child link="right_shoulder_pitch_link"/>
+    <axis xyz="0 -1 0"/>
+    <limit lower="-0.87267" upper="3.1416" effort="30" velocity="3.98"/>
+  </joint>
+  <link name="right_shoulder_roll_link">
+    <inertial>
+      <origin xyz="0.000312400347094885 -0.000273999607379255 -0.0375953578362609" rpy="0 0 0" />
+      <mass value="1.34618957458" />
+      <inertia ixx="0.00172305357613" ixy="4.72594990729e-07" ixz="8.95080809255e-07" iyy="0.00156777373019" iyz="-1.54120275275e-06" izz="0.000768841767471" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/right_shoulder_roll_link.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 -0.01 -0.065" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.035" length="0.09" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="0 -0.01 -0.11" rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.035" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="0 -0.01 -0.02" rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.035" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_shoulder_roll_joint" type="revolute">
+    <origin xyz="5e-05 -0.06535322324 6.334135041e-05" rpy="0 0 0"/>
+    <parent link="right_shoulder_pitch_link"/>
+    <child link="right_shoulder_roll_link"/>
+    <axis xyz="-1 0 0"/>
+    <limit lower="0" upper="1.5708" effort="25" velocity="12.25"/>
+  </joint>
+  <link name="right_shoulder_yaw_link">
+    <inertial>
+      <origin xyz="-0.000194974784057236 -0.000165517766152062 -0.0757490477560662" rpy="0 0 0" />
+      <mass value="1.00093403148" />
+      <inertia ixx="0.000912786409643" ixy="1.73132717257e-07" ixz="8.52633928319e-06" iyy="0.00102939490076" iyz="4.00959925885e-07" izz="0.000515941688464" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/right_shoulder_yaw_link.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.866666666666667 0.909803921568627 1 1" />
+      </material>
+    </visual>
+        </link>
+  <joint name="right_shoulder_yaw_joint" type="revolute">
+    <origin xyz="0 -0.0007840587182 -0.1289963672" rpy="0 0 0"/>
+    <parent link="right_shoulder_roll_link"/>
+    <child link="right_shoulder_yaw_link"/>
+    <axis xyz="0 -0.006078033456 -0.9999815286"/>
+    <limit lower="-1.5708" upper="1.5708" effort="20" velocity="5.45"/>
+  </joint>
+  <link name="right_elbow_link">
+    <inertial>
+      <origin xyz="0.0602611800270832 -0.00102324165810466 -0.00118954052952218" rpy="0 0 0" />
+      <mass value="0.704338218761" />
+      <inertia ixx="0.000310567872615" ixy="3.74889817448e-08" ixz="-8.66649289297e-06" iyy="0.000514630423892" iyz="-1.46157774145e-07" izz="0.000491648805109" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/right_elbow_link.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.866666666666667 0.909803921568627 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.035 0 0" rpy="0 -1.5708 0" />
+      <geometry>
+        <cylinder radius="0.038" length="0.07" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.07 0 0" rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.038" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.038" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_elbow_joint" type="revolute">
+    <origin xyz="0 0.0004006795283 -0.09860555673" rpy="-0.06357995311 1.483359028 -0.06939277108"/>
+    <parent link="right_shoulder_yaw_link"/>
+    <child link="right_elbow_link"/>
+    <axis xyz="0 0.9999815286 -0.006078033456"/>
+    <limit lower="-2.0944" upper="0" effort="12" velocity="9.32"/>
+  </joint>
+  <link name="right_wrist_yaw_link">
+    <inertial>
+      <origin xyz="0.0425559038908466 -0.000803473853938558 -0.000204523508972376" rpy="0 0 0" />
+      <mass value="0.748420976683" />
+      <inertia ixx="0.000299687372093" ixy="-1.68162027135e-06" ixz="3.24297868468e-05" iyy="0.000460347597975" iyz="4.04636002543e-07" izz="0.000422947162707" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/right_wrist_yaw_link.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.035 0 0" rpy="0 -1.5708 0" />
+      <geometry>
+        <cylinder radius="0.034" length="0.03" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.05 0 0" rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.034" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.02 0 0" rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.034" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_wrist_yaw_joint" type="revolute">
+    <origin xyz="0.106 -0.0009999815286 0" rpy="0 0 0"/>
+    <parent link="right_elbow_link"/>
+    <child link="right_wrist_yaw_link"/>
+    <axis xyz="1 0 0"/>
+    <limit lower="-3.1416" upper="0" effort="12" velocity="9.32"/>
+  </joint>
+  <link name="left_shoulder_pitch_link">
+    <inertial>
+      <origin xyz="0.000222640877215755 0.0204426829113191 2.80991462078828E-05" rpy="0 0 0" />
+      <mass value="0.436608475978" />
+      <inertia ixx="0.000343036803884" ixy="2.46752871793e-07" ixz="-8.09405713055e-10" iyy="0.000325708058254" iyz="4.22008920228e-09" izz="0.00034395662859" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/left_shoulder_pitch_link.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.866666666666667 0.909803921568627 1 1" />
+      </material>
+    </visual>
+        </link>
+  <joint name="left_shoulder_pitch_joint" type="revolute">
+    <origin xyz="-0.02621282535 0.0965 0.2611404833" rpy="0 0 0"/>
+    <parent link="waist_yaw_link"/>
+    <child link="left_shoulder_pitch_link"/>
+    <axis xyz="0 1 0"/>
+    <limit lower="-3.1416" upper="0.87267" effort="30" velocity="3.98"/>
+  </joint>
+  <link name="left_shoulder_roll_link">
+    <inertial>
+      <origin xyz="0.000312213865419936 0.000273748232912513 -0.037595393690891" rpy="0 0 0" />
+      <mass value="1.3461973241" />
+      <inertia ixx="0.00172305200755" ixy="-4.84512821291e-07" ixz="9.02731351941e-07" iyy="0.00156777000627" iyz="1.55138092039e-06" izz="0.000768855440283" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/left_shoulder_roll_link.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0.01 -0.065" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.035" length="0.09" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="0 0.01 -0.11" rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.035" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="0 0.01 -0.02" rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.035" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_shoulder_roll_joint" type="revolute">
+    <origin xyz="5e-05 0.06535322324 6.334135041e-05" rpy="0 0 0"/>
+    <parent link="left_shoulder_pitch_link"/>
+    <child link="left_shoulder_roll_link"/>
+    <axis xyz="-1 0 0"/>
+    <limit lower="-1.5708" upper="0" effort="25" velocity="12.25"/>
+  </joint>
+  <link name="left_shoulder_yaw_link">
+    <inertial>
+      <origin xyz="-0.000194964167193307 0.000165482417095908 -0.0757510240141527" rpy="0 0 0" />
+      <mass value="1.00089998385" />
+      <inertia ixx="0.000912774861407" ixy="-1.71459371851e-07" ixz="8.52623551572e-06" iyy="0.00102938282467" iyz="-4.00283239585e-07" izz="0.000515920292342" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/left_shoulder_yaw_link.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+        </link>
+  <joint name="left_shoulder_yaw_joint" type="revolute">
+    <origin xyz="0 0.0007840587182 -0.1289963672" rpy="0 0 0"/>
+    <parent link="left_shoulder_roll_link"/>
+    <child link="left_shoulder_yaw_link"/>
+    <axis xyz="0 0.006078009292 -0.9999815287"/>
+    <limit lower="-1.5708" upper="1.5708" effort="20" velocity="5.45"/>
+  </joint>
+  <link name="left_elbow_link">
+    <inertial>
+      <origin xyz="0.0602603826704021 0.00102327158761228 -0.00118991594814503" rpy="0 0 0" />
+      <mass value="0.704347561516" />
+      <inertia ixx="0.000310575869686" ixy="-3.67851695647e-08" ixz="-8.67143986159e-06" iyy="0.00051464152062" iyz="1.46686087699e-07" izz="0.000491651996122" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/left_elbow_link.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.866666666666667 0.909803921568627 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.035 0 0" rpy="0 -1.5708 0" />
+      <geometry>
+        <cylinder radius="0.038" length="0.07" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.07 0 0" rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.038" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.038" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_elbow_joint" type="revolute">
+    <origin xyz="0 -0.0004006795283 -0.09860555673" rpy="0.06360378094 1.483388955 0.06941669025"/>
+    <parent link="left_shoulder_yaw_link"/>
+    <child link="left_elbow_link"/>
+    <axis xyz="0 -0.9999815286 -0.006078033456"/>
+    <limit lower="0" upper="2.09443" effort="12" velocity="9.32"/>
+  </joint>
+  <link name="left_wrist_yaw_link">
+    <inertial>
+      <origin xyz="0.042555906816588 0.000803457957588488 -0.000204527188520098" rpy="0 0 0" />
+      <mass value="0.748420991759" />
+      <inertia ixx="0.000299687370985" ixy="1.68187454868e-06" ixz="3.24298080342e-05" iyy="0.000460347559209" iyz="-4.04702027755e-07" izz="0.000422947172995" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/left_wrist_yaw_link.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.035 0 0" rpy="0 -1.5708 0" />
+      <geometry>
+        <cylinder radius="0.034" length="0.03" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.05 0 0" rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.034" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.02 0 0" rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.034" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_wrist_yaw_joint" type="revolute">
+    <origin xyz="0.106 0.0009999815286 0" rpy="0 0 0"/>
+    <parent link="left_elbow_link"/>
+    <child link="left_wrist_yaw_link"/>
+    <axis xyz="1 0 0"/>
+    <limit lower="0" upper="3.1416" effort="12" velocity="9.32"/>
+  </joint>
+</robot>
