@@ -2278,6 +2278,10 @@
 		(uuid "a704ad21-8655-40f2-afb8-1e438d81d5ab")
 	)
 	(no_connect
+		(at 36.83 52.07)
+		(uuid "ade8729f-0dbc-4001-ae43-7177d9caff31")
+	)
+	(no_connect
 		(at 125.73 26.67)
 		(uuid "b4334357-19af-4e56-b269-26a6d8cbfbe8")
 	)

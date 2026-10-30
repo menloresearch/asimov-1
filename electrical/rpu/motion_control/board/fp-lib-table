@@ -4,4 +4,7 @@
 	(lib (name "footprints") (type "KiCad") (uri "/home/jasshank/work/menlo/radxa-cm5-kicad/footprints.pretty") (options "") (descr "") (disabled))
 	(lib (name "radxa") (type "KiCad") (uri "${KIPRJMOD}/radxa.pretty") (options "") (descr ""))
 	(lib (name "lcsc_lib") (type "KiCad") (uri "${KIPRJMOD}/lcsc_lib.pretty") (options "") (descr ""))
+	(lib (name "lcsc_lib") (type "KiCad") (uri "${KIPRJMOD}/lcsc_lib.pretty") (options "") (descr ""))
+	(lib (name "asimov-1-gripper-lib") (type "KiCad") (uri "/home/zh/PCB/asimov-1-gripper/electronics/lib/asimov-1-gripper-lib.pretty") (options "") (descr ""))
+	(lib (name "lcsc_lib") (type "KiCad") (uri "${KIPRJMOD}/lcsc_lib.pretty") (options "") (descr ""))
 )

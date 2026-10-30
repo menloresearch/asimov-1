@@ -45,3 +45,6 @@ fp-info-cache
 
 # Local project settings
 *.kicad_prl
+
+# Fabrication manifest 
+!FABRICATION_MANIFEST.csv

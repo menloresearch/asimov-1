@@ -1,0 +1,273 @@
+(footprint "CONN-SMD_4P-P1.50_B4B-ZR-SM4-TF"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Connector Header, ZH Series, 4 Position, 1.50mm, Surface Mount, Shrouded - 4 Wall, Solder, Detent Lock, Tin, Natural")
+	(property "Reference" "REF**"
+		(at 0 -5.024 0)
+		(layer "F.SilkS")
+		(uuid "bff5ca2d-0e02-483d-803a-cfc2aee9b43b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "CONN-SMD_4P-P1.50_B4B-ZR-SM4-TF"
+		(at 0 5.024 0)
+		(layer "F.Fab")
+		(uuid "287c8e85-73c9-4680-b6bb-a9e741a1d289")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f69effa2-504c-4484-ab13-fdb7c7a6ad57")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6307e052-4d11-471b-92b7-0e2fde7c80cf")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -4.8 -1.11)
+		(end -2.8 -1.11)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "46063fd2-9b3b-43e8-89ef-fedcd21b0be2")
+	)
+	(fp_line
+		(start -4.8 -0.31)
+		(end -4.8 -1.11)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "5906f0ef-5e18-43c4-8bfc-9b699ebfcc73")
+	)
+	(fp_line
+		(start -4.8 3.09)
+		(end -4.8 2.39)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e6601647-010b-4435-9ff2-3d872856166c")
+	)
+	(fp_line
+		(start 2.8 -1.11)
+		(end 4.8 -1.11)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ae53d01b-78bf-4404-a16e-dfa062395c6e")
+	)
+	(fp_line
+		(start 4.8 -1.11)
+		(end 4.8 -0.31)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "edf4f59a-c526-43a9-abc8-a623c238d841")
+	)
+	(fp_line
+		(start 4.8 2.39)
+		(end 4.8 3.09)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "af7196b5-ca74-4b1c-bdf9-b5998d01d588")
+	)
+	(fp_line
+		(start 4.8 3.09)
+		(end -4.8 3.09)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "19c08e79-7900-4b1b-b9fa-d33fe16a1850")
+	)
+	(fp_circle
+		(center 2.94 -1.67)
+		(end 3.06 -1.67)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "bb6436ad-3aa7-462c-9a00-738218498587")
+	)
+	(fp_line
+		(start -5.2 -1.2)
+		(end -5.2 3.2)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "3a946713-527a-42fa-b438-f3b7c3465fd2")
+	)
+	(fp_line
+		(start -5.2 3.2)
+		(end 5.2 3.2)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "959b2850-6e75-43b3-b924-df6dc5d3d9f4")
+	)
+	(fp_line
+		(start -2.6 -2.8)
+		(end -2.6 -1.2)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "cf3cdecb-dbd5-44aa-80db-8cc2a6690bd8")
+	)
+	(fp_line
+		(start -2.6 -1.2)
+		(end -5.2 -1.2)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "ddd57007-991a-439c-bddb-6ed57805c1c4")
+	)
+	(fp_line
+		(start 2.6 -2.8)
+		(end -2.6 -2.8)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "d4460050-7ad9-48d6-89a8-fa5b19432db3")
+	)
+	(fp_line
+		(start 2.6 -1.2)
+		(end 2.6 -2.8)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "8f24004a-dd68-4529-966c-d1879ceebee3")
+	)
+	(fp_line
+		(start 5.2 -1.2)
+		(end 2.6 -1.2)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "8023436c-bd5e-42d5-930f-964562cd17aa")
+	)
+	(fp_line
+		(start 5.2 3.2)
+		(end 5.2 -1.2)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "c9a75ce5-9ab1-4ce6-8160-c4e465aac21f")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "126ddec5-9514-49a0-a2e7-15897b55b0c6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at 2.25 -1.02)
+		(size 0.7 3.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "150b4ef9-2c07-4714-ba0e-5c4f8f4c1e11")
+	)
+	(pad "2" smd rect
+		(at 0.75 -1.02)
+		(size 0.7 3.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "6f83b49b-72c0-471d-a211-96287b58475e")
+	)
+	(pad "3" smd rect
+		(at -0.75 -1.02)
+		(size 0.7 3.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "867f959f-b7e7-4f39-8aa1-9b96c73a1954")
+	)
+	(pad "4" smd rect
+		(at -2.25 -1.02)
+		(size 0.7 3.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "b1d3f815-5660-48e1-aad1-94e1b53478c7")
+	)
+	(pad "5" smd rect
+		(at 4.3 1.02)
+		(size 1.5 2.3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "e7d7accc-0169-4c21-85ef-d873df543849")
+	)
+	(pad "6" smd rect
+		(at -4.3 1.02)
+		(size 1.5 2.3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "34a0737a-2cbd-4748-9952-2117b9a16612")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/lib/asimov-1-gripper-lib.3dshapes/CONN-SMD_ZH1.5-LS-4P.step"
+		(offset
+			(xyz 2.25 -1.5 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -180)
+		)
+	)
+)

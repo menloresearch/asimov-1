@@ -568,7 +568,9 @@
 						(type none)
 					)
 				)
-				(pin unspecified line
+			)
+			(symbol "HR963380AE_1_1"
+				(pin bidirectional line
 					(at -6.35 11.43 0)
 					(length 2.54)
 					(name "1"
@@ -586,7 +588,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin bidirectional line
 					(at -6.35 8.89 0)
 					(length 2.54)
 					(name "2"
@@ -604,7 +606,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin bidirectional line
 					(at -6.35 6.35 0)
 					(length 2.54)
 					(name "3"
@@ -622,7 +624,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin bidirectional line
 					(at -6.35 3.81 0)
 					(length 2.54)
 					(name "4"
@@ -640,7 +642,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at -6.35 1.27 0)
 					(length 2.54)
 					(name "5"
@@ -658,7 +660,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at -6.35 -1.27 0)
 					(length 2.54)
 					(name "6"
@@ -676,7 +678,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin bidirectional line
 					(at -6.35 -3.81 0)
 					(length 2.54)
 					(name "7"
@@ -694,7 +696,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin bidirectional line
 					(at -6.35 -6.35 0)
 					(length 2.54)
 					(name "8"
@@ -712,7 +714,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin bidirectional line
 					(at -6.35 -8.89 0)
 					(length 2.54)
 					(name "9"
@@ -730,7 +732,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin bidirectional line
 					(at -6.35 -11.43 0)
 					(length 2.54)
 					(name "10"
@@ -748,7 +750,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 6.35 11.43 180)
 					(length 2.54)
 					(name "11"
@@ -766,7 +768,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 6.35 8.89 180)
 					(length 2.54)
 					(name "12"
@@ -784,7 +786,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 6.35 -8.89 180)
 					(length 2.54)
 					(name "13"
@@ -802,7 +804,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 6.35 -11.43 180)
 					(length 2.54)
 					(name "14"
@@ -820,7 +822,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at 6.35 0 180)
 					(length 2.54)
 					(name "15"
@@ -934,7 +936,9 @@
 						(type none)
 					)
 				)
-				(pin unspecified line
+			)
+			(symbol "LSM6DSVTR_1_1"
+				(pin bidirectional line
 					(at -16.51 7.62 0)
 					(length 2.54)
 					(name "SDO/SA0"
@@ -952,7 +956,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin bidirectional line
 					(at -16.51 5.08 0)
 					(length 2.54)
 					(name "SDX"
@@ -970,7 +974,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin bidirectional line
 					(at -16.51 2.54 0)
 					(length 2.54)
 					(name "SCX"
@@ -988,7 +992,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin output line
 					(at -16.51 0 0)
 					(length 2.54)
 					(name "INT1"
@@ -1006,7 +1010,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at -16.51 -2.54 0)
 					(length 2.54)
 					(name "VDD_IO"
@@ -1024,7 +1028,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at -16.51 -5.08 0)
 					(length 2.54)
 					(name "GND"
@@ -1042,7 +1046,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at -16.51 -7.62 0)
 					(length 2.54)
 					(name "GND"
@@ -1060,7 +1064,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at 16.51 -7.62 180)
 					(length 2.54)
 					(name "VDD"
@@ -1078,7 +1082,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin output line
 					(at 16.51 -5.08 180)
 					(length 2.54)
 					(name "INT2"
@@ -1096,7 +1100,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 16.51 -2.54 180)
 					(length 2.54)
 					(name "OCS_AUX"
@@ -1114,7 +1118,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 16.51 0 180)
 					(length 2.54)
 					(name "SDO_AUX"
@@ -1132,7 +1136,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin input line
 					(at 16.51 2.54 180)
 					(length 2.54)
 					(name "CS"
@@ -1150,7 +1154,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin input line
 					(at 16.51 5.08 180)
 					(length 2.54)
 					(name "SCL"
@@ -1168,7 +1172,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin bidirectional line
 					(at 16.51 7.62 180)
 					(length 2.54)
 					(name "SDA"
@@ -1190,6 +1194,9 @@
 			(embedded_fonts no)
 		)
 		(symbol "lcsc_lib:TS50810-411-02528"
+			(pin_names
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1306,7 +1313,9 @@
 						(type none)
 					)
 				)
-				(pin unspecified line
+			)
+			(symbol "TS50810-411-02528_1_1"
+				(pin passive line
 					(at -5.08 -1.27 0)
 					(length 2.54)
 					(name "1"
@@ -1324,7 +1333,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 5.08 -1.27 180)
 					(length 2.54)
 					(name "2"
@@ -2023,6 +2032,121 @@
 								(size 1.27 1.27)
 							)
 						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:PWR_FLAG"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
 			)
@@ -4013,6 +4137,12 @@
 		(uuid "654ab661-f8d4-432e-822a-ad026499f990")
 	)
 	(junction
+		(at 209.55 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "66a27d0d-0e49-4ac5-9241-5b30935bfd54")
+	)
+	(junction
 		(at 128.27 125.73)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4195,6 +4325,10 @@
 		(uuid "3c78e5bb-96bd-4e6e-8ceb-3d1c4ae418a6")
 	)
 	(no_connect
+		(at 142.24 151.13)
+		(uuid "4036369c-a088-4936-a798-ce88b8caa62e")
+	)
+	(no_connect
 		(at 205.74 76.2)
 		(uuid "407b99a5-8e8d-4fc8-aa77-64a95f2caf71")
 	)
@@ -4261,6 +4395,10 @@
 	(no_connect
 		(at 66.04 67.31)
 		(uuid "7d6fdd30-5c1b-4aa9-ae06-7158b1bfc3df")
+	)
+	(no_connect
+		(at 50.8 140.97)
+		(uuid "82bc9cc6-3f65-4e14-88e5-e7ab165f89c0")
 	)
 	(no_connect
 		(at 66.04 143.51)
@@ -6316,6 +6454,84 @@
 			(project "board"
 				(path "/992ecbaf-83c2-4c1c-a6f6-75d6908eecbe/479bb26f-f0f3-4ec5-8e01-4f3c6519d1f1"
 					(reference "#PWR0213")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 209.55 87.63 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "51a8e658-0cc2-418b-89fd-d190b4838f20")
+		(property "Reference" "#FLG0201"
+			(at 209.55 85.725 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 209.55 82.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 209.55 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 209.55 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 209.55 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c44f8c44-7619-4806-9f30-021cec121401")
+		)
+		(instances
+			(project "board"
+				(path "/992ecbaf-83c2-4c1c-a6f6-75d6908eecbe/479bb26f-f0f3-4ec5-8e01-4f3c6519d1f1"
+					(reference "#FLG0201")
 					(unit 1)
 				)
 			)
