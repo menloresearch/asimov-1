@@ -38,7 +38,7 @@ fp-info-cache
 *.xml
 *.csv
 # ...but keep MuJoCo model files
-!sim-model/xmls/*.xml
+!sim-model/**/*.xml
 
 # Archived Backups (KiCad 6.0)
 **/*-backups/*.zip
