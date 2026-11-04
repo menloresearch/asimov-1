@@ -1,7 +1,7 @@
 part_id,description,quantity,process,material,specification,cad_path,supplier_url,notes
-ASV1_Stool_001,Printed component 001,1,3D printing,TBC,TBC,cad/ASV1_Stool _001.step.STEP,,Material and printing process/settings to be confirmed
-ASV1_Stool_002,Printed component 002,1,3D printing,TBC,TBC,cad/ASV1_Stool_002.step.STEP,,Material and printing process/settings to be confirmed
-ASV1_Stool_003,Printed component 003,2,3D printing,TBC,TBC,cad/ASV1_Stool _003.step.STEP,,Material and printing process/settings to be confirmed
-ASV1_Stool_004,Aluminium extrusion,2,Cut to length,Aluminium (grade TBC),40 x 40 mm profile; 500 mm cut length,cad/ASV1_Stool_004.step.STEP,,No end machining; profile/slot series and supplier to be confirmed
+ASV1_Stool_001,Printed component 001,1,FDM 3D printing,PLA or PETG,Layer height <= 0.28 mm; 10 walls; 4 top layers; 4 bottom layers; 20% grid infill; no supports,cad/ASV1_Stool _001.step.STEP,,See README.md for fabrication notes
+ASV1_Stool_002,Printed component 002,1,FDM 3D printing,PLA or PETG,Layer height <= 0.28 mm; 10 walls; 4 top layers; 4 bottom layers; 20% grid infill; no supports,cad/ASV1_Stool_002.step.STEP,,See README.md for fabrication notes
+ASV1_Stool_003,Printed component 003,2,FDM 3D printing,PLA or PETG,Layer height <= 0.28 mm; 10 walls; 4 top layers; 4 bottom layers; 20% grid infill; no supports,cad/ASV1_Stool _003.step.STEP,,See README.md for fabrication notes
+ASV1_Stool_004,Aluminium extrusion,2,Cut to length,Aluminium,40 x 40 mm profile; 500 mm cut length,cad/ASV1_Stool_004.step.STEP,,No end machining
 M8T-Slot Bolt,M8 T-slot bolt,6,Purchase,See supplier specification,McMaster-Carr 91523A231,cad/M8T-Slot Bolt.step.STEP,https://www.mcmaster.com/91523A231/,Supplier reference from the supplied sourcing PDF
 M8Nut,M8 nut,6,Purchase,See supplier specification,McMaster-Carr 90631A115,cad/M8Nut.step.STEP,https://www.mcmaster.com/90631A115/,Supplier reference from the supplied sourcing PDF

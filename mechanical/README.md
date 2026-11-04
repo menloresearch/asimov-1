@@ -46,11 +46,11 @@ The existing `SML_316L` directory spelling is retained in the inventory. Refer t
 | 500 (right leg) | [ASV1_500_40D](ASV1/500/FABRICATION/FDM_TPU_95A/README.md) | 1 |
 | 600 (left leg) | [ASV1_600_40D](ASV1/600/FABRICATION/FDM_TPU_95A/README.md) | 1 |
 
-The same sole fits either foot. Both STL files contain identical geometry; print two copies in TPU 95A using FDM. The material hardness is **Shore 95A**; `40D` is retained as part of the supplied identifier. Units/scale, print settings, attachment details, and foot-revision compatibility still need confirmation in the part notes.
+The same sole fits either foot. Both STL files contain identical geometry; print two copies in TPU 95A using FDM. The material hardness is **Shore 95A**; `40D` is retained as part of the supplied identifier. The STL units are millimetres; print at 100% scale with the sole on the bed. The linked part notes include the full print settings and slip-on attachment using two M4 × 16 mm flat-head bolts per foot, with no adhesive. Compatibility is confirmed for the latest foot design in this repository as of 2026-11-04.
 
 ### Stool accessory
 
-The [stool](accessories/stool/README.md) has its own [BOM](accessories/stool/BOM.csv), including quantities, CAD paths, and sourcing details. Accessory parts are inventoried there rather than under a robot subassembly.
+The [stool](accessories/stool/README.md) has its own [BOM](accessories/stool/BOM.csv), including quantities, CAD paths, and sourcing details. Print components 001–003 in PLA or PETG using FDM; the stool notes contain the print settings. Use two aluminium 40 × 40 mm extrusions, each cut to 500 mm with no end machining. Accessory parts are inventoried there rather than under a robot subassembly.
 
 ## Updating the manifests
 

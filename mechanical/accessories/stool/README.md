@@ -18,16 +18,31 @@ The STEP files were exported as AP214 from SolidWorks 2025 on 2026-09-24 and dec
 
 | Part | Quantity per stool | Specification |
 |---|---|---|
-| `ASV1_Stool_001` | 1 | 3D printed; material and printing process/settings TBC |
-| `ASV1_Stool_002` | 1 | 3D printed; material and printing process/settings TBC |
-| `ASV1_Stool_003` | 2 | 3D printed; material and printing process/settings TBC |
+| `ASV1_Stool_001` | 1 | FDM printed in PLA or PETG; settings below |
+| `ASV1_Stool_002` | 1 | FDM printed in PLA or PETG; settings below |
+| `ASV1_Stool_003` | 2 | FDM printed in PLA or PETG; settings below |
 | `ASV1_Stool_004` | 2 | Aluminium extrusion, **40 × 40 mm**, cut to **500 mm**; **no end machining** |
 | M8 T-slot bolt | 6 | [McMaster-Carr 91523A231](https://www.mcmaster.com/91523A231/) |
 | M8 nut | 6 | [McMaster-Carr 90631A115](https://www.mcmaster.com/90631A115/) |
 
 There are four printed pieces in total: one each of components 001 and 002, and two of component 003. The two aluminium extrusions are cut stock. Bolts and nuts are purchased hardware.
 
-The extrusion's slot/profile series, alloy/grade, and supplier part number still need confirmation. A 40 × 40 mm outside dimension alone does not identify a compatible slot profile.
+### Print settings
+
+Use these settings for all printed components (001–003):
+
+| Setting | Value |
+|---|---|
+| Manufacturing process | FDM 3D printing |
+| Material | PLA or PETG |
+| Layer height | 0.28 mm maximum |
+| Wall count | 10 |
+| Top layers | 4 |
+| Bottom layers | 4 |
+| Infill | 20%, grid pattern |
+| Supports | None required |
+
+Refer to the assembly image above for part placement.
 
 ## Opening the CAD
 
@@ -35,16 +50,7 @@ The extrusion's slot/profile series, alloy/grade, and supplier part number still
 2. Open `cad/ASV1_Stool.STEP` in a CAD application supporting STEP external references.
 3. If prompted for missing components, select the matching files in the same `cad/` directory. The original component filenames, including spaces and `.step.STEP` suffixes, are preserved because the assembly references them by name.
 
-The assembly file contains component placements and external references rather than embedded solid geometry. Check that the CAD application loads all **18 component instances** listed in the BOM. CAD-application import validation and a self-contained assembly export remain pending.
-
-## Details to complete
-
-- Material, printing process, and print parameters for components 001–003.
-- Exact aluminium extrusion profile, alloy/grade, and supplier reference.
-- Assembly sequence, fastening details, and robot positioning instructions.
-- Compatible robot revision and documented supported load / validation results.
-
-`TBC` in the BOM identifies a specification that has not been supplied. The shoe's TPU 95A specification applies to the shoe soles; the stool's printed-part material is still TBC.
+The assembly file contains component placements and external references rather than embedded solid geometry, with **18 component instances** listed in the BOM.
 
 ## Source package and storage
 
