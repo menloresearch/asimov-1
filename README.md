@@ -67,15 +67,20 @@ Asimov 1 is a 1.2 m, 35 kg biped with 25 actuated degrees of freedom. This repos
 
 Start with the repo-local [fabrication manifest](mechanical/FABRICATION_MANIFEST.csv) for the CAD-derived part inventory, then cross-reference the [BOM](https://manual.asimov.inc/v1/bom) and assembly manual for procurement details, sourcing, and fabrication notes.
 
+The [shoe accessory](mechanical/accessories/shoes/README.md) is supplied as a single `ASV1_Shoes.STL`. The shoes are symmetric and the same geometry fits either foot: print two identical copies in TPU 95A using FDM, one per foot.
+
+The [dummy hands](mechanical/accessories/dummy_hands/README.md) are supplied as `ASV1_DUMMY_HANDS.3mf`, a Bambu Studio project with embedded printing settings. See the [mechanical fabrication guide](mechanical/README.md) for the part-naming chart and material/process classes, and the [stool accessory](mechanical/accessories/stool/README.md) for its CAD, BOM, and fabrication specifications.
+
 **[Assembly Manual →](https://manual.asimov.inc)**
 
 ---
 
 ## Fabrication manifest
 
-The CAD-derived fabrication manifest can be checked locally:
+The fabrication manifest inventories STEP and STL files under `mechanical/ASV1/*/FABRICATION`. Accessories have their own documentation under `mechanical/accessories`. Regenerate the manifest after changing the robot fabrication files, then verify it:
 
 ```bash
+python3 scripts/generate_fabrication_manifest.py
 python3 scripts/generate_fabrication_manifest.py --check
 ```
 

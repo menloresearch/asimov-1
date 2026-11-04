@@ -14,6 +14,7 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 CAD_ROOT = REPO_ROOT / "mechanical" / "ASV1"
 CSV_PATH = REPO_ROOT / "mechanical" / "FABRICATION_MANIFEST.csv"
 JSON_PATH = REPO_ROOT / "mechanical" / "FABRICATION_MANIFEST.json"
+CAD_EXTENSIONS = {".step", ".stl"}
 FABRICATION_ORDER = {
     "ALU_7075": 0,
     "SML_316L": 1,
@@ -34,15 +35,15 @@ def repo_path(path: Path) -> str:
 
 def part_id_from_file(path: Path) -> str:
     name = path.name
-    while name.lower().endswith(".step"):
-        name = name[:-5]
+    while Path(name).suffix.lower() in CAD_EXTENSIONS:
+        name = Path(name).stem
     return name
 
 
 def build_entries(cad_root: Path = CAD_ROOT) -> list[dict[str, str]]:
     entries: list[dict[str, str]] = []
     for file_path in cad_root.glob("*/FABRICATION/*/*"):
-        if not file_path.is_file() or not file_path.name.lower().endswith(".step"):
+        if not file_path.is_file() or file_path.suffix.lower() not in CAD_EXTENSIONS:
             continue
         fabrication_dir = file_path.parent
         subassembly_dir = fabrication_dir.parent.parent

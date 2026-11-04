@@ -1,6 +1,10 @@
 __pycache__/
 *.py[cod]
 
+# Local source packages and macOS metadata
+/temp/
+.DS_Store
+
 # For PCBs designed using KiCad: https://www.kicad.org/
 # Format documentation: https://kicad.org/help/file-formats/
 
@@ -37,6 +41,9 @@ fp-info-cache
 # Exported BOM files
 *.xml
 *.csv
+# Repository-maintained fabrication inventory and accessory BOMs
+!mechanical/FABRICATION_MANIFEST.csv
+!mechanical/accessories/**/BOM.csv
 # ...but keep MuJoCo model files
 !sim-model/**/*.xml
 
