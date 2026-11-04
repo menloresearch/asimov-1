@@ -1,4 +1,5 @@
 *.STEP filter=lfs diff=lfs merge=lfs -text
+*.3mf filter=lfs diff=lfs merge=lfs -text
 
 # Generated, self-contained viewer; store in ordinary Git without a text diff.
 mechanical/accessories/stool/preview/*.HTML -diff linguist-generated=true

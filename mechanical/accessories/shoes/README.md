@@ -1,13 +1,13 @@
-# Left shoe sole — module 600
+# ASV1 Shoes
 
 | Specification | Value |
 |---|---|
-| Part | [ASV1_600_40D.STL](ASV1_600_40D.STL) |
+| Part | [ASV1_Shoes.STL](ASV1_Shoes.STL) |
 | Manufacturing process | FDM 3D printing |
 | Material | TPU, Shore 95A |
-| Quantity | 1 for the left foot; 2 soles per robot |
+| Quantity | Print 2 copies per robot, one for each foot |
 
-The same sole fits either foot. The [right shoe sole (module 500)](../../../500/FABRICATION/FDM_TPU_95A/README.md) contains identical geometry under the right-leg part filename. Print two copies of this geometry: one for each foot.
+The shoe is symmetric and the same geometry fits either foot. **Print two identical copies** of `ASV1_Shoes.STL`, one for each foot; no mirroring is needed.
 
 ## Print settings
 

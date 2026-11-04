@@ -19,8 +19,7 @@ FABRICATION_ORDER = {
     "ALU_7075": 0,
     "SML_316L": 1,
     "MJF_PA12": 2,
-    "FDM_TPU_95A": 3,
-    "OFF_THE_SHELF": 4,
+    "OFF_THE_SHELF": 3,
 }
 CSV_FIELDS = [
     "subassembly",
