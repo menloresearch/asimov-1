@@ -12,9 +12,10 @@ mechanical/
 │   ├── FullBodyAssembly/Asimov_1.STEP
 │   └── Docs/
 ├── accessories/
+│   ├── README.md              Overview with renders and links
 │   ├── dummy_hands/           ASV1_DUMMY_HANDS.3mf with embedded print settings
 │   ├── shoes/                 ASV1_Shoes.STL; print 2 identical copies
-│   └── stool/                 CAD, separate BOM, and fabrication notes
+│   └── chair/                 CAD, separate BOM, and fabrication notes
 ├── FABRICATION_MANIFEST.csv
 └── FABRICATION_MANIFEST.json
 ```
@@ -36,19 +37,21 @@ The existing `SML_316L` directory spelling is retained in the inventory. The par
 
 ## Accessories
 
-### Shoe soles
+See the [accessories page](accessories/README.md) for renders and links to all three.
 
-The [shoes](accessories/shoes/README.md) use a single symmetric [ASV1_Shoes.STL](accessories/shoes/ASV1_Shoes.STL) that fits either foot. **Print two identical copies**, one per foot, in TPU Shore 95A using FDM. The STL units are millimetres; print at 100% scale with the sole on the bed.
+### Asimov 1 Shoes
+
+The [Asimov 1 Shoes](accessories/shoes/README.md) use a single symmetric [ASV1_Shoes.STL](accessories/shoes/ASV1_Shoes.STL) that fits either foot. **Print two identical copies**, one per foot, in TPU Shore 95A using FDM. The STL units are millimetres; print at 100% scale with the sole on the bed.
 
 The shoe notes include the full print settings and slip-on attachment using two M4 × 16 mm flat-head bolts per foot, with no adhesive. Compatibility is confirmed for the latest foot design in this repository as of 2026-11-04.
 
-### Dummy hands
+### Asimov 1 Dummy Hands
 
-The [dummy hands](accessories/dummy_hands/README.md) are supplied as [ASV1_DUMMY_HANDS.3mf](accessories/dummy_hands/ASV1_DUMMY_HANDS.3mf), a print-ready Bambu Studio project. Open it as a project to use its embedded printing settings and plate layout.
+The [Asimov 1 Dummy Hands](accessories/dummy_hands/README.md) are supplied as [ASV1_DUMMY_HANDS.3mf](accessories/dummy_hands/ASV1_DUMMY_HANDS.3mf), a print-ready Bambu Studio project. Open it as a project to use its embedded printing settings and plate layout.
 
-### Stool accessory
+### Asimov 1 Chair
 
-The [stool](accessories/stool/README.md) has its own [BOM](accessories/stool/BOM.csv), including quantities, CAD paths, and sourcing details. Print components 001–003 in PLA or PETG using FDM; the stool notes contain the print settings. Use two aluminium 40 × 40 mm extrusions, each cut to 500 mm with no end machining.
+The [Asimov 1 Chair](accessories/chair/README.md) has its own [BOM](accessories/chair/BOM.csv), including quantities, CAD paths, and sourcing details. Print components 001–003 in PLA or PETG using FDM; the Chair notes contain the print settings. Use two aluminium 40 × 40 mm extrusions, each cut to 500 mm with no end machining.
 
 ## Updating the manifests
 

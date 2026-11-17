@@ -69,7 +69,7 @@ Start with the repo-local [fabrication manifest](mechanical/FABRICATION_MANIFEST
 
 The [shoe accessory](mechanical/accessories/shoes/README.md) is supplied as a single `ASV1_Shoes.STL`. The shoes are symmetric and the same geometry fits either foot: print two identical copies in TPU 95A using FDM, one per foot.
 
-The [dummy hands](mechanical/accessories/dummy_hands/README.md) are supplied as `ASV1_DUMMY_HANDS.3mf`, a Bambu Studio project with embedded printing settings. See the [mechanical fabrication guide](mechanical/README.md) for the part-naming chart and material/process classes, and the [stool accessory](mechanical/accessories/stool/README.md) for its CAD, BOM, and fabrication specifications.
+The [dummy hands](mechanical/accessories/dummy_hands/README.md) are supplied as `ASV1_DUMMY_HANDS.3mf`, a Bambu Studio project with embedded printing settings. See the [mechanical fabrication guide](mechanical/README.md) for the part-naming chart and material/process classes, and the [Asimov 1 Chair](mechanical/accessories/chair/README.md) for its CAD, BOM, and fabrication specifications.
 
 **[Assembly Manual →](https://manual.asimov.inc)**
 
