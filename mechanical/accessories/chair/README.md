@@ -1,8 +1,15 @@
-# Asimov 1 stool
+[Asimov 1](../../../README.md) / [Accessories](../README.md) / Chair
 
-CAD, parts inventory, and fabrication information for the Asimov 1 support stool.
+# Asimov 1 Chair
 
-![Stool assembly and original BOM](docs/ASV1_StoolBOM.png)
+Asimov 1 sits on the Chair when it isn't walking. It's the easiest way to store the robot, and you can work on it without a crane.
+
+<p>
+  <img src="docs/chair_onrobot.jpg" alt="Asimov 1 sitting on the Asimov 1 Chair" width="49%">
+  <img src="docs/chair_hero.jpg" alt="Asimov 1 Chair" width="49%">
+</p>
+
+Internally we call it the stool, so the part files keep their `ASV1_Stool` names. The assembly finds its parts by these names, so please don't rename them.
 
 ## Files
 
@@ -16,7 +23,9 @@ The STEP files were exported as AP214 from SolidWorks 2025 on 2026-09-24 and dec
 
 ## Fabrication and purchasing
 
-| Part | Quantity per stool | Specification |
+![Asimov 1 Chair assembly and original BOM](docs/ASV1_StoolBOM.png)
+
+| Part | Quantity per Chair | Specification |
 |---|---|---|
 | `ASV1_Stool_001` | 1 | FDM printed in PLA or PETG; settings below |
 | `ASV1_Stool_002` | 1 | FDM printed in PLA or PETG; settings below |
@@ -52,10 +61,12 @@ Refer to the assembly image above for part placement.
 
 The assembly file contains component placements and external references rather than embedded solid geometry, with **18 component instances** listed in the BOM.
 
-## Source package and storage
-
-These files originate from `ASV1_StoolParts.zip`. The assembly STEP has been placed alongside its component STEP files so its filename references can resolve locally. The CAD contents are unchanged. The separate `ASV1_Stool.HTML` supplied with the ZIP was identical to the embedded viewer, so this directory includes one viewer copy.
-
-STEP files use the repository's Git LFS rule. The BOM, documentation, and viewer use ordinary Git. Keep the source ZIP in the local ignored `temp/` directory; the extracted files here are the versioned package.
+## License
 
 This accessory has its own BOM, separate from the robot fabrication manifest. See the repository [hardware license](../../../HARDWARE-LICENSE.txt).
+
+---
+
+**More accessories** [Asimov 1 Dummy Hands](../dummy_hands/README.md), [Asimov 1 Shoes](../shoes/README.md), [all accessories](../README.md)
+
+Don't have an Asimov 1 yet? It's sold as a DIY kit, without these accessories. [Order the Asimov 1 DIY Kit →](https://menlo.ai/asimov-1#buy)
