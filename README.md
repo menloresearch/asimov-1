@@ -57,7 +57,7 @@ Asimov 1 is a 1.2 m, 35 kg biped with 25 actuated degrees of freedom. This repos
 
 | Category | Included | Not Included |
 |---|---|---|
-| Hardware | All BOM components (unassembled), power supply & cabling, spare parts | Tools, hands ([print the Asimov 1 Dummy Hands](mechanical/accessories/dummy_hands/README.md)) |
+| Hardware | All BOM components (unassembled), power supply & cabling, spare parts | Tools, hands ([print the Asimov 1 Display Hands](mechanical/accessories/display_hands/README.md)) |
 | Compute | RPi edge board, motion control board, network board, power distribution board | 4G/5G modules |
 | Sensors | Monocular camera, IMUs, mic, speaker, motor joint states | Lidar, 360 cam |
 | Docs | Quick start guide, manual, DIY build videos | — |
@@ -78,9 +78,9 @@ See the [mechanical fabrication guide](mechanical/README.md) for the part-naming
 
 Parts we use on our own robots, free to print and build. The DIY kit doesn't include them.
 
-| [Asimov 1 Dummy Hands](mechanical/accessories/dummy_hands/README.md) | [Asimov 1 Shoes](mechanical/accessories/shoes/README.md) | [Asimov 1 Chair](mechanical/accessories/chair/README.md) |
+| [Asimov 1 Display Hands](mechanical/accessories/display_hands/README.md) | [Asimov 1 Shoes](mechanical/accessories/shoes/README.md) | [Asimov 1 Chair](mechanical/accessories/chair/README.md) |
 |---|---|---|
-| [![Asimov 1 Dummy Hands on the wrist](mechanical/accessories/dummy_hands/docs/hands_onrobot.jpg)](mechanical/accessories/dummy_hands/README.md) | [![Asimov 1 Shoes on the robot](mechanical/accessories/shoes/docs/shoes_onrobot.jpg)](mechanical/accessories/shoes/README.md) | [![Asimov 1 sitting on the Asimov 1 Chair](mechanical/accessories/chair/docs/chair_onrobot.jpg)](mechanical/accessories/chair/README.md) |
+| [![Asimov 1 Display Hand on the wrist](mechanical/accessories/display_hands/docs/hands_onrobot.jpg)](mechanical/accessories/display_hands/README.md) | [![Asimov 1 Shoes on the robot](mechanical/accessories/shoes/docs/shoes_onrobot.jpg)](mechanical/accessories/shoes/README.md) | [![Asimov 1 sitting on the Asimov 1 Chair](mechanical/accessories/chair/docs/chair_onrobot.jpg)](mechanical/accessories/chair/README.md) |
 
 **[See all accessories →](mechanical/accessories/README.md)**
 

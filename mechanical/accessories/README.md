@@ -4,10 +4,10 @@
 
 We use these on our own Asimov 1 robots. Print them, build them, change them.
 
-| [Asimov 1 Dummy Hands](dummy_hands/README.md) | [Asimov 1 Shoes](shoes/README.md) | [Asimov 1 Chair](chair/README.md) |
+| [Asimov 1 Display Hands](display_hands/README.md) | [Asimov 1 Shoes](shoes/README.md) | [Asimov 1 Chair](chair/README.md) |
 |---|---|---|
-| [![Asimov 1 Dummy Hands on the wrist](dummy_hands/docs/hands_onrobot.jpg)](dummy_hands/README.md) | [![Asimov 1 Shoes on the robot](shoes/docs/shoes_onrobot.jpg)](shoes/README.md) | [![Asimov 1 sitting on the Asimov 1 Chair](chair/docs/chair_onrobot.jpg)](chair/README.md) |
-| Dummy fists for the open wrists. A print-ready Bambu Studio project. | TPU shoes that stop the robot slipping on smooth floors. One file for both feet. | Where the robot sits when it isn't walking, and the easiest way to store it. |
+| [![Asimov 1 Display Hand on the wrist](display_hands/docs/hands_onrobot.jpg)](display_hands/README.md) | [![Asimov 1 Shoes on the robot](shoes/docs/shoes_onrobot.jpg)](shoes/README.md) | [![Asimov 1 sitting on the Asimov 1 Chair](chair/docs/chair_onrobot.jpg)](chair/README.md) |
+| Fists for the open wrists, for display only. A print-ready Bambu Studio project. | TPU shoes that stop the robot slipping on smooth floors. One file for both feet. | Where the robot sits when it isn't walking, and the easiest way to store it. |
 
 ## Don't have an Asimov 1 yet?
 

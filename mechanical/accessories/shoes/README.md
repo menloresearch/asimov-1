@@ -40,6 +40,6 @@ Compatibility is confirmed for the latest foot design in this repository as of 2
 
 ---
 
-**More accessories** [Asimov 1 Dummy Hands](../dummy_hands/README.md), [Asimov 1 Chair](../chair/README.md), [all accessories](../README.md)
+**More accessories** [Asimov 1 Display Hands](../display_hands/README.md), [Asimov 1 Chair](../chair/README.md), [all accessories](../README.md)
 
 Don't have an Asimov 1 yet? It's sold as a DIY kit, without these accessories. [Order the Asimov 1 DIY Kit →](https://menlo.ai/asimov-1#buy)

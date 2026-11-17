@@ -13,7 +13,7 @@ mechanical/
 │   └── Docs/
 ├── accessories/
 │   ├── README.md              Overview with renders and links
-│   ├── dummy_hands/           ASV1_DUMMY_HANDS.3mf with embedded print settings
+│   ├── display_hands/         ASV1_DUMMY_HANDS.3mf with embedded print settings
 │   ├── shoes/                 ASV1_Shoes.STL; print 2 identical copies
 │   └── chair/                 CAD, separate BOM, and fabrication notes
 ├── FABRICATION_MANIFEST.csv
@@ -45,9 +45,9 @@ The [Asimov 1 Shoes](accessories/shoes/README.md) use a single symmetric [ASV1_S
 
 The shoe notes include the full print settings and slip-on attachment using two M4 × 16 mm flat-head bolts per foot, with no adhesive. Compatibility is confirmed for the latest foot design in this repository as of 2026-11-04.
 
-### Asimov 1 Dummy Hands
+### Asimov 1 Display Hands
 
-The [Asimov 1 Dummy Hands](accessories/dummy_hands/README.md) are supplied as [ASV1_DUMMY_HANDS.3mf](accessories/dummy_hands/ASV1_DUMMY_HANDS.3mf), a print-ready Bambu Studio project. Open it as a project to use its embedded printing settings and plate layout.
+The [Asimov 1 Display Hands](accessories/display_hands/README.md) are supplied as [ASV1_DUMMY_HANDS.3mf](accessories/display_hands/ASV1_DUMMY_HANDS.3mf), a print-ready Bambu Studio project. Open it as a project to use its embedded printing settings and plate layout.
 
 ### Asimov 1 Chair
 

@@ -67,6 +67,6 @@ This accessory has its own BOM, separate from the robot fabrication manifest. Se
 
 ---
 
-**More accessories** [Asimov 1 Dummy Hands](../dummy_hands/README.md), [Asimov 1 Shoes](../shoes/README.md), [all accessories](../README.md)
+**More accessories** [Asimov 1 Display Hands](../display_hands/README.md), [Asimov 1 Shoes](../shoes/README.md), [all accessories](../README.md)
 
 Don't have an Asimov 1 yet? It's sold as a DIY kit, without these accessories. [Order the Asimov 1 DIY Kit →](https://menlo.ai/asimov-1#buy)
