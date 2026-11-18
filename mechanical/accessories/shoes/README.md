@@ -1,4 +1,13 @@
-# ASV1 Shoes
+[Asimov 1](../../../README.md) / [Accessories](../README.md) / Shoes
+
+# Asimov 1 Shoes
+
+Printed TPU shoes for Asimov 1. Without them the robot can slip on smooth floors.
+
+<p>
+  <img src="docs/shoes_flatlay.jpg" alt="Asimov 1 Shoes" width="49%">
+  <img src="docs/shoes_onrobot.jpg" alt="Asimov 1 Shoes on the robot" width="49%">
+</p>
 
 | Specification | Value |
 |---|---|
@@ -28,3 +37,9 @@ The shoe is symmetric and the same geometry fits either foot. **Print two identi
 Slip the foot into the shoe, then secure it to the foot with **two M4 × 16 mm flat-head bolts**: one at the toe and one at the heel. No adhesive is required. Both feet together require **four bolts**.
 
 Compatibility is confirmed for the latest foot design in this repository as of 2026-11-04.
+
+---
+
+**More accessories** [Asimov 1 Display Hands](../display_hands/README.md), [Asimov 1 Chair](../chair/README.md), [all accessories](../README.md)
+
+Don't have an Asimov 1 yet? It's sold as a DIY kit, without these accessories. [Order the Asimov 1 DIY Kit →](https://menlo.ai/asimov-1#buy)

@@ -11,6 +11,7 @@ Asimov is an open-source humanoid robot that you can build, train and customize.
   <a href="https://manual.asimov.inc">Manual</a> ·
   <a href="https://asimov.inc/diy-kit">DIY Kit</a> ·
   <a href="https://static.asimov.inc/asimov/v1/asimov-v1-20260420.html">3D Model</a> ·
+  <a href="mechanical/accessories/README.md">Accessories</a> ·
   <a href="https://discord.gg/HzDfGN7kUw">Discord</a> ·
   <a href="https://x.com/asimovinc">X</a> ·
   <a href="https://forum.menlo.ai">Forum</a>
@@ -56,7 +57,7 @@ Asimov 1 is a 1.2 m, 35 kg biped with 25 actuated degrees of freedom. This repos
 
 | Category | Included | Not Included |
 |---|---|---|
-| Hardware | All BOM components (unassembled), power supply & cabling, spare parts | Tools, hands |
+| Hardware | All BOM components (unassembled), power supply & cabling, spare parts | Tools, hands ([print the Asimov 1 Display Hands](mechanical/accessories/display_hands/README.md)) |
 | Compute | RPi edge board, motion control board, network board, power distribution board | 4G/5G modules |
 | Sensors | Monocular camera, IMUs, mic, speaker, motor joint states | Lidar, 360 cam |
 | Docs | Quick start guide, manual, DIY build videos | — |
@@ -67,11 +68,21 @@ Asimov 1 is a 1.2 m, 35 kg biped with 25 actuated degrees of freedom. This repos
 
 Start with the repo-local [fabrication manifest](mechanical/FABRICATION_MANIFEST.csv) for the CAD-derived part inventory, then cross-reference the [BOM](https://manual.asimov.inc/v1/bom) and assembly manual for procurement details, sourcing, and fabrication notes.
 
-The [shoe accessory](mechanical/accessories/shoes/README.md) is supplied as a single `ASV1_Shoes.STL`. The shoes are symmetric and the same geometry fits either foot: print two identical copies in TPU 95A using FDM, one per foot.
-
-The [dummy hands](mechanical/accessories/dummy_hands/README.md) are supplied as `ASV1_DUMMY_HANDS.3mf`, a Bambu Studio project with embedded printing settings. See the [mechanical fabrication guide](mechanical/README.md) for the part-naming chart and material/process classes, and the [stool accessory](mechanical/accessories/stool/README.md) for its CAD, BOM, and fabrication specifications.
+See the [mechanical fabrication guide](mechanical/README.md) for the part-naming chart and material/process classes. The accessories have their own section [below](#accessories).
 
 **[Assembly Manual →](https://manual.asimov.inc)**
+
+---
+
+## Accessories
+
+Parts we use on our own robots, free to print and build. The DIY kit doesn't include them.
+
+| [Asimov 1 Display Hands](mechanical/accessories/display_hands/README.md) | [Asimov 1 Shoes](mechanical/accessories/shoes/README.md) | [Asimov 1 Chair](mechanical/accessories/chair/README.md) |
+|---|---|---|
+| [![Asimov 1 Display Hand on the wrist](mechanical/accessories/display_hands/docs/hands_onrobot.jpg)](mechanical/accessories/display_hands/README.md) | [![Asimov 1 Shoes on the robot](mechanical/accessories/shoes/docs/shoes_onrobot.jpg)](mechanical/accessories/shoes/README.md) | [![Asimov 1 sitting on the Asimov 1 Chair](mechanical/accessories/chair/docs/chair_onrobot.jpg)](mechanical/accessories/chair/README.md) |
+
+**[See all accessories →](mechanical/accessories/README.md)**
 
 ---
 
